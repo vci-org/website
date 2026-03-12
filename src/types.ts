@@ -18,13 +18,10 @@ export interface Team {
   role: string;
 }
 
-export interface Partner {
+export interface MapPoint {
   id: string;
   name: string;
-  description: string;
   location: { x: number; y: number; label: string }; // Coordinates for the SVG map
-  website?: string;
-  logoUrl?: string;
 }
 
 export interface BlogPost {

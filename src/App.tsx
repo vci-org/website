@@ -3,12 +3,11 @@ import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
-import { Walks } from './pages/Walks';
 import { Partners } from './pages/Partners';
 import { Participate } from './pages/Participate';
 import { Projects } from './pages/Projects';
-import { Archive } from './pages/Archive';
-import { Blog, Media, Info } from './pages/Others';
+import { Diario } from './pages/Archive';
+import { Blog, Info } from './pages/Others';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -27,13 +26,11 @@ const App: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/chi-siamo" element={<About />} />
-          <Route path="/cammini" element={<Walks />} />
           <Route path="/progetti" element={<Projects />} />
-          <Route path="/archivio" element={<Archive />} />
+          <Route path="/diario" element={<Diario />} />
           <Route path="/associazioni" element={<Partners />} />
           <Route path="/partecipa" element={<Participate />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/media" element={<Media />} />
           <Route path="/info" element={<Info />} />
         </Routes>
       </Layout>

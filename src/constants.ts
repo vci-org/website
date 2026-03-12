@@ -1,14 +1,12 @@
-import type { Event, Team, Partner, BlogPost, NavItem } from './types';
+import type { Event, Team, MapPoint, BlogPost, NavItem } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
   { label: 'Chi Siamo', path: '/chi-siamo' },
-  { label: 'Cammini', path: '/cammini' },
   { label: 'Progetti', path: '/progetti' },
   { label: 'Associazioni', path: '/associazioni' },
-  { label: 'Archivio Cammini', path: '/archivio' },
+  { label: 'Diario Itinerante', path: '/diario' },
   { label: 'Blog', path: '/blog' },
-  { label: 'Media', path: '/media' },
   { label: 'Info', path: '/info' },
   { label: 'Partecipa', path: '/partecipa' },
 ];
@@ -80,14 +78,14 @@ export const TEAMS: Team[] = [
 ];
 
 // Rough coordinates for a simple abstract map of Veneto
-export const PARTNERS: Partner[] = [
-  { id: 'p1', name: 'Associazione Cammini Veneti', description: 'Promozione del turismo lento.', location: { x: 50, y: 40, label: 'Vicenza' } },
-  { id: 'p2', name: 'EcoPiave', description: 'Tutela del fiume Piave.', location: { x: 70, y: 30, label: 'Treviso' } },
-  { id: 'p3', name: 'Laguna Nostra', description: 'Cultura della laguna veneta.', location: { x: 80, y: 60, label: 'Venezia' } },
-  { id: 'p4', name: 'Dolomiti Heart', description: 'Amanti della montagna.', location: { x: 55, y: 15, label: 'Belluno' } },
-  { id: 'p5', name: 'Colli Euganei Slow', description: 'Camminate nei colli.', location: { x: 45, y: 70, label: 'Padova' } },
-  { id: 'p6', name: 'Verona Green', description: 'Verde urbano e periurbano.', location: { x: 20, y: 60, label: 'Verona' } },
-  { id: 'p7', name: 'Delta Po Nature', description: 'Birdwatching e cammino.', location: { x: 60, y: 90, label: 'Rovigo' } },
+export const PARTNERS: MapPoint[] = [
+  { id: 'p1', name: 'Vicenza', location: { x: 40, y: 50, label: 'Vicenza' } },
+  { id: 'p2', name: 'Treviso', location: { x: 65, y: 40, label: 'Treviso' } },
+  { id: 'p3', name: 'Venezia', location: { x: 80, y: 60, label: 'Venezia' } },
+  { id: 'p4', name: 'Belluno', location: { x: 70, y: 20, label: 'Belluno' } },
+  { id: 'p5', name: 'Padova', location: { x: 60, y: 70, label: 'Padova' } },
+  { id: 'p6', name: 'Verona', location: { x: 20, y: 60, label: 'Verona' } },
+  { id: 'p7', name: 'Rovigo', location: { x: 55, y: 80, label: 'Rovigo' } },
 ];
 
 export const BLOG_POSTS: BlogPost[] = [

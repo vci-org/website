@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { PageHeader, Section } from '../components/Shared';
 import { PROJECTS } from '../data/projects';
 import type { Project } from '../types';
-import { X } from 'lucide-react';
+import { X, Instagram, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -21,12 +22,31 @@ export const Projects: React.FC = () => {
               {project.imageUrl && (
                 <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover"/>
               )}
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold text-vci-green mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <button className="text-vci-green font-bold text-sm hover:underline uppercase tracking-wider">
-                  Scopri di più
-                </button>
+                <p className="text-gray-600 mb-6 flex-grow">{project.description}</p>
+                
+                <div className="flex flex-col gap-3 mt-auto">
+                  <Link 
+                    to="/partecipa" 
+                    onClick={(e) => e.stopPropagation()}
+                    className="flex justify-center items-center gap-2 bg-vci-green text-white font-bold py-3 px-4 rounded-xl hover:bg-vci-lightGreen transition-colors"
+                  >
+                    Partecipa <ArrowRight size={18} />
+                  </Link>
+                  <a 
+                    href="https://instagram.com/venetocomunitaitinerante" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="flex justify-center items-center gap-2 border border-gray-200 text-gray-700 font-bold py-3 px-4 rounded-xl hover:bg-gray-50 transition-colors"
+                  >
+                    <Instagram size={18} /> @venetocomunitaitinerante
+                  </a>
+                  <button className="mt-2 text-vci-blue font-bold text-sm hover:underline uppercase tracking-wider self-center">
+                    Scopri di più
+                  </button>
+                </div>
               </div>
             </div>
           ))}

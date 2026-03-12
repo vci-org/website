@@ -2,17 +2,17 @@ import type { Project } from '../types';
 
 export const PROJECTS: Project[] = [
   {
-    id: 'festival',
-    title: 'Festival del Camminare',
-    description: 'Un evento annuale di tre giorni con talk, escursioni e musica per celebrare la cultura del cammino.',
-    fullDescription: 'Il Festival del Camminare riunisce ogni anno centinaia di appassionati. Durante i tre giorni esploriamo le più belle zone del Veneto, offrendo talk con esperti di sostenibilità, musica dal vivo alla sera e tavole rotonde sulle aree interne.',
-    imageUrl: 'https://picsum.photos/800/400?random=50',
+    id: 'ecocamp-trieste',
+    title: 'Ecocamp',
+    description: 'A Trieste a Giugno. Focus su guerra e Rotta Balcanica per i migranti.',
+    fullDescription: 'Un campo ecosolidale a Trieste nel mese di Giugno. L\'obiettivo è riflettere e agire attorno alle tematiche della guerra e approfondire la questione della Rotta Balcanica intrapresa da migliaia di migranti, per sensibilizzare e creare accoglienza attiva.',
+    imageUrl: 'https://picsum.photos/800/400?random=60',
   },
   {
-    id: 'scuole',
-    title: 'VCI nelle Scuole',
-    description: "Portiamo l'educazione ambientale e la pratica del cammino nelle scuole primarie del Veneto.",
-    fullDescription: "VCI nelle Scuole è un progetto di educazione alla sostenibilità e al cammino lento. Lavoriamo con le scuole primarie per insegnare ai bambini il valore esplorativo del territorio, la biodiversità locale e l'importanza dell'attività fisica all'aperto.",
-    imageUrl: 'https://picsum.photos/800/400?random=51',
+    id: 'cammino-2026',
+    title: 'Cammino Edizione 2026',
+    description: 'A Settembre, in partenza da Bassano del Grappa per arrivare a Belluno.',
+    fullDescription: 'La nostra edizione 2026 del cammino ci porterà da Bassano del Grappa fino a Belluno. Sarà un percorso di riflessione e scoperta del territorio, della sua natura e delle realtà associative che lo rendono vivo.',
+    imageUrl: 'https://picsum.photos/800/400?random=61',
   }
 ];

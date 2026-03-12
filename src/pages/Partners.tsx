@@ -2,10 +2,20 @@ import React, { useState, useMemo } from 'react';
 import { PageHeader, Section } from '../components/Shared';
 import { ASSOCIATIONS } from '../data/associations';
 import type { Association } from '../types';
-import { MapPin, ExternalLink, Search, X } from 'lucide-react';
+import { MapPin, ExternalLink, Search, X, Leaf, Wheat, HeartHandshake, Palette, Users } from 'lucide-react';
 import { PARTNERS } from '../constants';
 
-const VenetoMap: React.FC = () => {
+const getCategoryIcon = (category: string) => {
+  if (!category) return <Users size={20} className="text-vci-blue" />;
+  const cat = category.toLowerCase();
+  if (cat.includes('ambient') || cat.includes('natur') || cat.includes('eco') || cat.includes('verde') || cat.includes('animal')) return <Leaf size={20} className="text-vci-green" />;
+  if (cat.includes('agricol') || cat.includes('fattoria') || cat.includes('orto') || cat.includes('vino')) return <Wheat size={20} className="text-amber-600" />;
+  if (cat.includes('social') || cat.includes('educazion') || cat.includes('scuola') || cat.includes('accoglienza') || cat.includes('donna')) return <HeartHandshake size={20} className="text-rose-500" />;
+  if (cat.includes('cultur') || cat.includes('festival') || cat.includes('arte') || cat.includes('musica')) return <Palette size={20} className="text-purple-500" />;
+  return <Users size={20} className="text-vci-blue" />;
+};
+
+const VenetoMap: React.FC<{ selectedProvince: string | null; onSelectProvince: (p: string | null) => void }> = ({ selectedProvince, onSelectProvince }) => {
   return (
     <div className="relative w-full max-w-2xl mx-auto aspect-[4/3] bg-blue-50/30 rounded-3xl border border-blue-100 overflow-hidden shadow-inner mb-16">
       <svg viewBox="0 0 100 100" className="w-full h-full absolute inset-0">
@@ -24,19 +34,20 @@ const VenetoMap: React.FC = () => {
          {PARTNERS.map(p => (
            <g 
              key={p.id} 
-             className="group"
+             className="group cursor-pointer"
+             onClick={() => onSelectProvince(selectedProvince === p.location.label ? null : p.location.label)}
            >
              <circle 
                cx={p.location.x} 
                cy={p.location.y} 
-               r={2} 
-               className="fill-vci-blue" 
+               r={selectedProvince === p.location.label ? 4 : 2} 
+               className={`transition-all duration-300 ${selectedProvince === p.location.label ? 'fill-vci-green' : 'fill-vci-blue group-hover:fill-vci-green'}`} 
              />
              <text 
                 x={p.location.x} 
                 y={p.location.y + 5} 
                 textAnchor="middle" 
-                className="text-[3px] fill-gray-600 font-sans pointer-events-none uppercase tracking-wider"
+                className={`text-[3px] font-sans pointer-events-none uppercase tracking-wider transition-colors ${selectedProvince === p.location.label ? 'fill-vci-green font-bold' : 'fill-gray-600'}`}
              >
                {p.location.label}
              </text>
@@ -53,14 +64,20 @@ const VenetoMap: React.FC = () => {
 export const Partners: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedAssoc, setSelectedAssoc] = useState<Association | null>(null);
+  const [selectedProvince, setSelectedProvince] = useState<string | null>(null);
 
   const filtered = useMemo(() => {
-    return ASSOCIATIONS.filter(a => 
-      a.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
-      a.locationLabel.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      a.category.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  }, [searchTerm]);
+    return ASSOCIATIONS.filter(a => {
+      const matchesSearch = 
+        a.name.toLowerCase().includes(searchTerm.toLowerCase()) || 
+        a.locationLabel.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        a.category.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      const matchesProvince = selectedProvince ? a.locationLabel.toLowerCase().includes(selectedProvince.toLowerCase()) : true;
+      
+      return matchesSearch && matchesProvince;
+    });
+  }, [searchTerm, selectedProvince]);
 
   return (
     <>
@@ -70,7 +87,7 @@ export const Partners: React.FC = () => {
       />
 
       <Section>
-        <VenetoMap />
+        <VenetoMap selectedProvince={selectedProvince} onSelectProvince={setSelectedProvince} />
 
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center mb-10 gap-4">
@@ -100,8 +117,8 @@ export const Partners: React.FC = () => {
                   className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 cursor-pointer hover:shadow-lg hover:border-vci-green/30 transition-all flex flex-col h-full"
                 >
                   <div className="flex items-start justify-between mb-4">
-                    <div className="w-10 h-10 bg-green-50 rounded-full flex items-center justify-center text-vci-green shrink-0">
-                      🤝
+                    <div className="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center shrink-0 border border-gray-100 shadow-sm">
+                      {getCategoryIcon(assoc.category)}
                     </div>
                     {assoc.category && (
                       <span className="text-xs font-bold px-2 py-1 bg-gray-100 text-gray-600 rounded-md text-right">
@@ -132,8 +149,8 @@ export const Partners: React.FC = () => {
             </button>
             
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center text-3xl shrink-0">
-                🌱
+              <div className="w-16 h-16 bg-gray-50 rounded-full flex items-center justify-center shrink-0 border border-gray-100 shadow-sm">
+                {getCategoryIcon(selectedAssoc.category)}
               </div>
               <div>
                 <h2 className="text-3xl font-bold text-vci-darkBlue">{selectedAssoc.name}</h2>
