@@ -6,6 +6,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Cammini', path: '/cammini' },
   { label: 'Progetti', path: '/progetti' },
   { label: 'Associazioni', path: '/associazioni' },
+  { label: 'Archivio Cammini', path: '/archivio' },
   { label: 'Blog', path: '/blog' },
   { label: 'Media', path: '/media' },
   { label: 'Info', path: '/info' },

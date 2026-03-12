@@ -41,3 +41,38 @@ export interface NavItem {
   label: string;
   path: string;
 }
+
+export interface Association {
+  id: string;
+  name: string;
+  category: string;
+  locationLabel: string;
+  website: string;
+  socials: string;
+  edition: number | string;
+}
+
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  fullDescription?: string;
+  imageUrl?: string;
+  partners?: string[];
+}
+
+export interface ArchiveEdition {
+  id: string;
+  year: number;
+  duration: string; // e.g. "3 weeks", "1 week"
+  title: string;
+  description: string;
+  days: {
+    dayNumber: number;
+    startPoint: string;
+    endPoint: string;
+    difficulty: string;
+    associationsMet: string[];
+    gpxUrl?: string; // For komoot or gpx iframe/link
+  }[];
+}

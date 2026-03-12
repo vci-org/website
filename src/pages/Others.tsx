@@ -3,33 +3,6 @@ import { PageHeader, Section } from '../components/Shared';
 import { BLOG_POSTS, FAQ_ITEMS } from '../constants';
 import { ChevronDown } from 'lucide-react';
 
-// --- PROJECTS PAGE ---
-export const Projects: React.FC = () => (
-  <>
-    <PageHeader title="Progetti" subtitle="Le nostre iniziative a lungo termine." />
-    <Section>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-          <img src="https://picsum.photos/800/400?random=50" alt="Festival" className="w-full h-48 object-cover"/>
-          <div className="p-8">
-            <h3 className="text-2xl font-bold text-vci-green mb-2">Festival del Camminare</h3>
-            <p className="text-gray-600 mb-4">Un evento annuale di tre giorni con talk, escursioni e musica per celebrare la cultura del cammino.</p>
-            <span className="text-amber-500 text-sm font-bold uppercase tracking-wider">In corso</span>
-          </div>
-        </div>
-        <div className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100">
-          <img src="https://picsum.photos/800/400?random=51" alt="Scuole" className="w-full h-48 object-cover"/>
-          <div className="p-8">
-            <h3 className="text-2xl font-bold text-vci-green mb-2">VCI nelle Scuole</h3>
-            <p className="text-gray-600 mb-4">Portiamo l'educazione ambientale e la pratica del cammino nelle scuole primarie del Veneto.</p>
-            <span className="text-vci-blue text-sm font-bold uppercase tracking-wider">Pianificazione</span>
-          </div>
-        </div>
-      </div>
-    </Section>
-  </>
-);
-
 // --- BLOG PAGE ---
 export const Blog: React.FC = () => (
   <>

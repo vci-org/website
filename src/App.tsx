@@ -6,7 +6,9 @@ import { About } from './pages/About';
 import { Walks } from './pages/Walks';
 import { Partners } from './pages/Partners';
 import { Participate } from './pages/Participate';
-import { Projects, Blog, Media, Info } from './pages/Others';
+import { Projects } from './pages/Projects';
+import { Archive } from './pages/Archive';
+import { Blog, Media, Info } from './pages/Others';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -27,6 +29,7 @@ const App: React.FC = () => {
           <Route path="/chi-siamo" element={<About />} />
           <Route path="/cammini" element={<Walks />} />
           <Route path="/progetti" element={<Projects />} />
+          <Route path="/archivio" element={<Archive />} />
           <Route path="/associazioni" element={<Partners />} />
           <Route path="/partecipa" element={<Participate />} />
           <Route path="/blog" element={<Blog />} />
