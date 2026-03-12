@@ -37,7 +37,7 @@ const Header: React.FC = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden xl:flex items-center space-x-6">
-          {NAV_ITEMS.map((item) => (
+          {NAV_ITEMS.filter(item => item.path !== '/partecipa').map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
@@ -51,6 +51,14 @@ const Header: React.FC = () => {
               {item.label}
             </NavLink>
           ))}
+
+          <button
+            onClick={() => handleNav('/partecipa')}
+            className="group relative inline-flex items-center justify-center px-6 py-2.5 font-bold text-white transition-all duration-300 bg-vci-green rounded-full hover:bg-vci-lightGreen shadow-lg hover:shadow-vci-green/30 hover:-translate-y-0.5"
+          >
+            <span className="relative">Partecipa</span>
+            <div className="absolute inset-0 rounded-full bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-500 origin-center"></div>
+          </button>
         </nav>
 
         {/* Mobile Toggle */}
@@ -66,7 +74,7 @@ const Header: React.FC = () => {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="absolute top-full left-0 w-full bg-vci-beige shadow-xl border-t border-gray-100 flex flex-col p-4 space-y-4 xl:hidden animate-fade-in-down">
-          {NAV_ITEMS.map((item) => (
+          {NAV_ITEMS.filter(item => item.path !== '/partecipa').map((item) => (
             <button
               key={item.path}
               onClick={() => handleNav(item.path)}
@@ -78,6 +86,12 @@ const Header: React.FC = () => {
               {item.label}
             </button>
           ))}
+          <button
+            onClick={() => handleNav('/partecipa')}
+            className="w-full bg-vci-green text-white py-4 rounded-2xl font-bold text-lg shadow-xl active:scale-95 transition-transform"
+          >
+            Partecipa Ora
+          </button>
         </div>
       )}
     </header>
