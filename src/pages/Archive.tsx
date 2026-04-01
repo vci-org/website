@@ -23,7 +23,7 @@ export const Diario: React.FC = () => {
         </div>
 
         <div className="relative border-l-2 md:border-l-4 border-vci-yellow/30 ml-4 md:ml-8 pl-8 md:pl-12 space-y-20 pb-12">
-          {ARCHIVE_EDITIONS.reverse().map((edition) => (
+          {[...ARCHIVE_EDITIONS].reverse().map((edition) => (
             <div key={edition.id} className="relative">
               {/* Timeline Dot */}
               <div className="absolute -left-[45px] md:-left-[64px] top-0 w-8 h-8 md:w-10 md:h-10 bg-white border-4 border-vci-yellow rounded-full shadow-md z-10 flex items-center justify-center">
