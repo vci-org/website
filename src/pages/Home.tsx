@@ -1,11 +1,12 @@
 import React from 'react';
 import { ArrowRight, Map, Users, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Section, EventCard } from '../components/Shared';
-import { NEXT_EVENTS } from '../constants';
+import { Section, ProjectCard } from '../components/Shared';
+import { PROJECTS } from '../data/projects';
 
 export const Home: React.FC = () => {
-  const nextEvent = NEXT_EVENTS[0];
+  // Select the latest 1-2 projects that are planned (future)
+  const futureProjects = PROJECTS.filter(p => p.status === 'future').slice(0, 2);
 
   return (
     <>
@@ -13,9 +14,9 @@ export const Home: React.FC = () => {
       <div className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://picsum.photos/1920/1080?grayscale&blur=2" 
-            alt="Paesaggio Veneto" 
+          <img
+            src="https://picsum.photos/1920/1080?grayscale&blur=2"
+            alt="Paesaggio Veneto"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-vci-yellow/60 to-vci-yellow/80 mix-blend-multiply" />
@@ -27,22 +28,22 @@ export const Home: React.FC = () => {
             Benvenuti in VCI
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight animate-fade-in-up">
-            Camminiamo per unire <br/>
-            <span className="text-vci-lightYellow italic">comunità</span>, <span className="text-vci-blue italic">territori</span> <br/>
+            Camminiamo per unire <br />
+            <span className="text-vci-lightYellow italic">comunità</span>, <span className="text-vci-blue italic">territori</span> <br />
             e <span className="text-vci-lightYellow italic">persone</span>.
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light animate-fade-in-up delay-100">
             Un'associazione che riscopre il Veneto a passo lento, tessendo relazioni e valorizzando la bellezza locale, creando una rete di comunicazione tra le realtà locali.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-200">
-            <Link 
-              to="/partecipa" 
+            <Link
+              to="/partecipa"
               className="px-8 py-4 bg-white text-vci-yellow rounded-full font-bold hover:bg-vci-lightYellow transition-all transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2"
             >
-              Partecipa alla prossima camminata <ArrowRight size={20} />
+              Partecipa al prossimo evento <ArrowRight size={20} />
             </Link>
-            <Link 
-              to="/chi-siamo" 
+            <Link
+              to="/chi-siamo"
               className="px-8 py-4 border-2 border-white text-white rounded-full font-bold hover:bg-white/10 transition-all flex items-center justify-center"
             >
               Scopri chi siamo
@@ -68,7 +69,7 @@ export const Home: React.FC = () => {
             </div>
             <h3 className="text-2xl font-serif font-bold text-gray-800 mb-3">Cammini</h3>
             <p className="text-gray-600 mb-6">Esploriamo il Veneto attraverso percorsi lenti, riscoprendo sentieri dimenticati e paesaggi nascosti.</p>
-            <Link to="/cammini" className="text-vci-yellow font-semibold hover:underline decoration-2 underline-offset-4">Scopri il calendario</Link>
+            <Link to="/diario" className="text-vci-yellow font-semibold hover:underline decoration-2 underline-offset-4">Scopri i cammini</Link>
           </div>
 
           {/* Card 2 */}
@@ -97,17 +98,17 @@ export const Home: React.FC = () => {
       <Section>
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
-            <img 
-              src="https://picsum.photos/800/800?random=20" 
-              alt="Gruppo in cammino" 
-              className="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500" 
+            <img
+              src="https://picsum.photos/800/800?random=20"
+              alt="Gruppo in cammino"
+              className="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500"
             />
           </div>
           <div className="md:w-1/2">
             <span className="text-vci-yellow font-bold tracking-widest uppercase text-sm mb-2 block">Chi siamo</span>
             <h2 className="text-4xl font-serif font-bold text-gray-800 mb-6">Molto più di un gruppo di trekking.</h2>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-              VCI nasce dall'idea che il territorio non sia solo un luogo fisico, ma un tessuto di storie e relazioni. 
+              VCI nasce dall'idea che il territorio non sia solo un luogo fisico, ma un tessuto di storie e relazioni.
               Dal 2018, uniamo passi e pensieri per costruire un Veneto più consapevole e connesso.
             </p>
             <Link to="/chi-siamo" className="inline-flex items-center text-vci-yellow font-bold hover:gap-2 transition-all">
@@ -122,20 +123,22 @@ export const Home: React.FC = () => {
         <div className="container mx-auto relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between mb-10">
             <div>
-              <h2 className="text-3xl font-serif font-bold text-gray-800">Prossimo Appuntamento</h2>
+              <h2 className="text-3xl font-serif font-bold text-gray-800">Prossimi Appuntamenti</h2>
               <p className="text-gray-600 mt-2">Allaccia le scarpe, si parte!</p>
             </div>
-            <Link to="/cammini" className="hidden md:block px-6 py-3 border border-vci-darkBlue text-vci-darkBlue rounded-full hover:bg-vci-darkBlue hover:text-white transition-colors">
+            <Link to="/progetti" className="hidden md:block px-6 py-3 border border-vci-darkBlue text-vci-darkBlue rounded-full hover:bg-vci-darkBlue hover:text-white transition-colors">
               Vedi tutti gli eventi
             </Link>
           </div>
 
-          <div className="max-w-4xl mx-auto">
-             <EventCard event={nextEvent} />
+          <div className={`grid grid-cols-1 ${futureProjects.length > 1 ? 'md:grid-cols-2' : 'max-w-2xl mx-auto'} gap-8`}>
+            {futureProjects.map(project => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
           </div>
 
           <div className="mt-8 text-center md:hidden">
-             <Link to="/cammini" className="inline-block px-6 py-3 border border-vci-darkBlue text-vci-darkBlue rounded-full">
+            <Link to="/progetti" className="inline-block px-6 py-3 border border-vci-darkBlue text-vci-darkBlue rounded-full">
               Vedi tutti gli eventi
             </Link>
           </div>
@@ -148,8 +151,8 @@ export const Home: React.FC = () => {
         <p className="text-vci-lightYellow text-lg mb-10 max-w-2xl mx-auto">
           Che tu voglia camminare, aiutare nell'organizzazione o proporre un'idea, c'è spazio per te in VCI.
         </p>
-        <Link 
-          to="/partecipa" 
+        <Link
+          to="/partecipa"
           className="inline-block bg-white text-vci-yellow px-10 py-4 rounded-full font-bold text-lg hover:bg-vci-lightYellow transition-colors shadow-lg"
         >
           Unisciti alla Community

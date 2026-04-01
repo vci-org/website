@@ -40,13 +40,6 @@ const VenetoMap: React.FC<{
 
   return (
     <div className="relative w-full max-w-4xl mx-auto aspect-square bg-[#f0f4f8] rounded-[3rem] border border-blue-200/30 overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.1)] mb-16 px-4 py-8">
-      {/* Geographical Context */}
-      <div className="absolute top-1/2 left-8 text-[12px] font-black text-blue-200 uppercase tracking-[0.4em] transform rotate-90 select-none -translate-y-1/2">
-        Lago di Garda
-      </div>
-      <div className="absolute bottom-24 right-12 text-[12px] font-black text-blue-300 uppercase tracking-[0.4em] transform -rotate-12 select-none">
-        Mar Adriatico
-      </div>
 
       <svg viewBox="0 0 3346 3385" className="w-full h-full drop-shadow-2xl">
         <defs>

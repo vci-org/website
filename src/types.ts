@@ -1,14 +1,3 @@
-export interface Event {
-  id: string;
-  title: string;
-  date: string;
-  location: string;
-  distance: string;
-  difficulty: 'Facile' | 'Medio' | 'Impegnativo';
-  description: string;
-  partnerAssociation?: string;
-  imageUrl: string;
-}
 
 export interface Team {
   id: string;

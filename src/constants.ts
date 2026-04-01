@@ -1,4 +1,4 @@
-import type { Event, Team, MapPoint, NavItem } from './types';
+import type { Team, MapPoint, NavItem } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
@@ -10,40 +10,6 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Partecipa', path: '/partecipa' },
 ];
 
-export const NEXT_EVENTS: Event[] = [
-  {
-    id: '1',
-    title: 'Cammino dei Colli Euganei',
-    date: '2023-11-12',
-    location: 'Arquà Petrarca (PD)',
-    distance: '12 km',
-    difficulty: 'Medio',
-    description: 'Un percorso panoramico tra i vigneti e gli ulivi dei Colli Euganei, alla scoperta di borghi storici.',
-    partnerAssociation: 'Amici dei Colli',
-    imageUrl: 'https://picsum.photos/800/600?random=1',
-  },
-  {
-    id: '2',
-    title: 'Lungo il Piave',
-    date: '2023-11-26',
-    location: 'San Donà di Piave (VE)',
-    distance: '8 km',
-    difficulty: 'Facile',
-    description: 'Camminata pianeggiante lungo il fiume sacro alla patria, riflettendo sulla storia e la natura.',
-    partnerAssociation: 'Legambiente Veneto',
-    imageUrl: 'https://picsum.photos/800/600?random=2',
-  },
-  {
-    id: '3',
-    title: 'Prealpi Trevigiane',
-    date: '2023-12-10',
-    location: 'Vittorio Veneto (TV)',
-    distance: '15 km',
-    difficulty: 'Impegnativo',
-    description: 'Esclusione in quota per ammirare il panorama invernale delle Prealpi.',
-    imageUrl: 'https://picsum.photos/800/600?random=3',
-  }
-];
 
 export const TEAMS: Team[] = [
   {
@@ -98,7 +64,7 @@ export const FAQ_ITEMS = [
   },
   {
     question: "Come posso iscrivermi?",
-    answer: "Puoi iscriverti direttamente dalla pagina 'Cammini' cliccando sul singolo evento."
+    answer: "Puoi iscriverti direttamente dalla pagina 'Progetti' cliccando sul singolo evento."
   },
   {
     question: "Posso portare il mio cane?",
