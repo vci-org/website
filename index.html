@@ -12,12 +12,13 @@
           extend: {
             colors: {
               vci: {
-                green: '#2F5233', // Forest green
-                lightGreen: '#4A7c59',
-                beige: '#F5F5F0', // Light beige
-                sand: '#E6E2D3',
-                blue: '#7FA9C2', // Veneto sky/water
-                darkBlue: '#4A6F85'
+                yellow: '#F59E0B', // Golden amber
+                gold: '#D97706',
+                lightYellow: '#FEF3C7',
+                beige: '#FFFCF0', // Warmer beige
+                sand: '#FEF3C7',
+                blue: '#0369A1', // Deep Sky
+                darkBlue: '#075985'
               }
             },
             fontFamily: {
@@ -39,14 +40,14 @@
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #F5F5F0;
+        background: #FFFCF0;
       }
       ::-webkit-scrollbar-thumb {
-        background: #A3B18A;
+        background: #F59E0B;
         border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #2F5233;
+        background: #D97706;
       }
       html {
         scroll-behavior: smooth;
@@ -68,7 +69,7 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-vci-beige text-gray-800 antialiased selection:bg-vci-green selection:text-white">
+  <body class="bg-vci-beige text-gray-800 antialiased selection:bg-vci-yellow selection:text-white">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

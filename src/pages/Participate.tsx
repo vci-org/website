@@ -13,8 +13,8 @@ export const Participate: React.FC = () => {
       <Section>
         {/* --- THREE ACTIONS --- */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-        <div className="text-center p-8 border rounded-3xl hover:border-vci-green hover:bg-green-50 transition-colors">
-          <div className="w-20 h-20 bg-vci-green text-white rounded-full mx-auto flex items-center justify-center mb-6">
+        <div className="text-center p-8 border rounded-3xl hover:border-vci-yellow hover:bg-vci-lightYellow transition-colors">
+          <div className="w-20 h-20 bg-vci-yellow text-white rounded-full mx-auto flex items-center justify-center mb-6">
             <Footprints size={40} />
           </div>
           <h3 className="text-xl font-bold mb-2">Cammina</h3>
@@ -48,7 +48,7 @@ export const Participate: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="mailto:venetocomunitaitinerante@oltrevia.it"
-            className="flex justify-center items-center gap-2 bg-vci-green text-white font-bold py-4 px-8 rounded-xl hover:bg-vci-lightGreen transition-colors shadow-md"
+            className="flex justify-center items-center gap-2 bg-vci-yellow text-white font-bold py-4 px-8 rounded-xl hover:bg-vci-gold transition-colors shadow-md"
           >
             <Mail size={20} /> Invia una Email
           </a>

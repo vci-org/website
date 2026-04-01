@@ -56,6 +56,12 @@ export interface Project {
   fullDescription?: string;
   imageUrl?: string;
   partners?: string[];
+  status: 'past' | 'future';
+  googleFormUrl?: string; // If provided, "Partecipa" button is active
+  content?: {
+    type: 'text' | 'image';
+    value: string;
+  }[];
 }
 
 export interface ArchiveEdition {

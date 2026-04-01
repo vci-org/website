@@ -6,6 +6,7 @@ import { About } from './pages/About';
 import { Partners } from './pages/Partners';
 import { Participate } from './pages/Participate';
 import { Projects } from './pages/Projects';
+import { ProjectDetail } from './pages/ProjectDetail';
 import { Diario } from './pages/Archive';
 import { Blog, Info } from './pages/Others';
 
@@ -27,6 +28,7 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/chi-siamo" element={<About />} />
           <Route path="/progetti" element={<Projects />} />
+          <Route path="/progetti/:projectId" element={<ProjectDetail />} />
           <Route path="/diario" element={<Diario />} />
           <Route path="/associazioni" element={<Partners />} />
           <Route path="/partecipa" element={<Participate />} />

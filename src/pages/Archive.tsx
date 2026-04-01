@@ -22,17 +22,17 @@ export const Diario: React.FC = () => {
           </p>
         </div>
 
-        <div className="relative border-l-2 md:border-l-4 border-vci-green/30 ml-4 md:ml-8 pl-8 md:pl-12 space-y-20 pb-12">
+        <div className="relative border-l-2 md:border-l-4 border-vci-yellow/30 ml-4 md:ml-8 pl-8 md:pl-12 space-y-20 pb-12">
           {ARCHIVE_EDITIONS.reverse().map((edition) => (
             <div key={edition.id} className="relative">
               {/* Timeline Dot */}
-              <div className="absolute -left-[45px] md:-left-[64px] top-0 w-8 h-8 md:w-10 md:h-10 bg-white border-4 border-vci-green rounded-full shadow-md z-10 flex items-center justify-center">
-                <div className="w-2 h-2 md:w-3 md:h-3 bg-vci-green rounded-full"></div>
+              <div className="absolute -left-[45px] md:-left-[64px] top-0 w-8 h-8 md:w-10 md:h-10 bg-white border-4 border-vci-yellow rounded-full shadow-md z-10 flex items-center justify-center">
+                <div className="w-2 h-2 md:w-3 md:h-3 bg-vci-yellow rounded-full"></div>
               </div>
 
               {/* Edition Header */}
               <div className="mb-8">
-                <span className="inline-block px-4 py-1.5 bg-vci-green text-white text-sm font-bold rounded-full mb-3 shadow-sm tracking-widest uppercase">
+                <span className="inline-block px-4 py-1.5 bg-vci-yellow text-white text-sm font-bold rounded-full mb-3 shadow-sm tracking-widest uppercase">
                   {edition.year} • {edition.duration}
                 </span>
                 <h2 className="text-3xl md:text-4xl font-bold font-serif text-vci-darkBlue mb-3">{edition.title}</h2>
@@ -44,7 +44,7 @@ export const Diario: React.FC = () => {
                 {edition.days.map((day) => (
                   <div key={day.dayNumber} className="bg-white rounded-3xl p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
                     {/* Day Badge */}
-                    <div className="absolute top-0 right-0 bg-vci-green text-white font-bold py-1 px-4 rounded-bl-xl text-sm opacity-90 group-hover:opacity-100 transition-opacity">
+                    <div className="absolute top-0 right-0 bg-vci-yellow text-white font-bold py-1 px-4 rounded-bl-xl text-sm opacity-90 group-hover:opacity-100 transition-opacity">
                       Giorno {day.dayNumber}
                     </div>
 
@@ -80,9 +80,9 @@ export const Diario: React.FC = () => {
                         <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-1">
                           <Map size={14} /> Mappa Tappa
                         </h4>
-                        <div className="bg-gray-50 border-2 border-dashed border-gray-200 rounded-xl py-6 flex flex-col items-center justify-center text-center group-hover:border-vci-green/50 transition-colors">
+                        <div className="bg-gray-50 border-2 border-dashed border-gray-200 rounded-xl py-6 flex flex-col items-center justify-center text-center group-hover:border-vci-yellow/50 transition-colors">
                           {day.gpxUrl ? (
-                            <a href={day.gpxUrl} target="_blank" rel="noopener noreferrer" className="text-vci-green font-bold flex items-center gap-2 hover:underline">
+                            <a href={day.gpxUrl} target="_blank" rel="noopener noreferrer" className="text-vci-yellow font-bold flex items-center gap-2 hover:underline">
                               Apri Profilo Altimetrico <ExternalLink size={16} />
                             </a>
                           ) : (

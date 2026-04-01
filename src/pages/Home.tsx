@@ -18,7 +18,7 @@ export const Home: React.FC = () => {
             alt="Paesaggio Veneto" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-vci-green/60 to-vci-green/80 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-b from-vci-yellow/60 to-vci-yellow/80 mix-blend-multiply" />
         </div>
 
         {/* Hero Content */}
@@ -28,8 +28,8 @@ export const Home: React.FC = () => {
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight animate-fade-in-up">
             Camminiamo per unire <br/>
-            <span className="text-vci-sand italic">comunità</span>, <span className="text-vci-blue italic">territori</span> <br/>
-            e <span className="text-vci-sand italic">persone</span>.
+            <span className="text-vci-lightYellow italic">comunità</span>, <span className="text-vci-blue italic">territori</span> <br/>
+            e <span className="text-vci-lightYellow italic">persone</span>.
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light animate-fade-in-up delay-100">
             Un'associazione che riscopre il Veneto a passo lento, tessendo relazioni e valorizzando la bellezza locale, creando una rete di comunicazione tra le realtà locali.
@@ -37,7 +37,7 @@ export const Home: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-200">
             <Link 
               to="/partecipa" 
-              className="px-8 py-4 bg-white text-vci-green rounded-full font-bold hover:bg-vci-sand transition-all transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2"
+              className="px-8 py-4 bg-white text-vci-yellow rounded-full font-bold hover:bg-vci-lightYellow transition-all transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2"
             >
               Partecipa alla prossima camminata <ArrowRight size={20} />
             </Link>
@@ -63,12 +63,12 @@ export const Home: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-20 -mt-24 md:-mt-32">
           {/* Card 1 */}
           <div className="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-            <div className="w-14 h-14 bg-vci-green/10 rounded-2xl flex items-center justify-center text-vci-green mb-6">
+            <div className="w-14 h-14 bg-vci-yellow/10 rounded-2xl flex items-center justify-center text-vci-yellow mb-6">
               <Map size={32} />
             </div>
             <h3 className="text-2xl font-serif font-bold text-gray-800 mb-3">Cammini</h3>
             <p className="text-gray-600 mb-6">Esploriamo il Veneto attraverso percorsi lenti, riscoprendo sentieri dimenticati e paesaggi nascosti.</p>
-            <Link to="/cammini" className="text-vci-green font-semibold hover:underline decoration-2 underline-offset-4">Scopri il calendario</Link>
+            <Link to="/cammini" className="text-vci-yellow font-semibold hover:underline decoration-2 underline-offset-4">Scopri il calendario</Link>
           </div>
 
           {/* Card 2 */}
@@ -104,13 +104,13 @@ export const Home: React.FC = () => {
             />
           </div>
           <div className="md:w-1/2">
-            <span className="text-vci-green font-bold tracking-widest uppercase text-sm mb-2 block">Chi siamo</span>
+            <span className="text-vci-yellow font-bold tracking-widest uppercase text-sm mb-2 block">Chi siamo</span>
             <h2 className="text-4xl font-serif font-bold text-gray-800 mb-6">Molto più di un gruppo di trekking.</h2>
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
               VCI nasce dall'idea che il territorio non sia solo un luogo fisico, ma un tessuto di storie e relazioni. 
               Dal 2018, uniamo passi e pensieri per costruire un Veneto più consapevole e connesso.
             </p>
-            <Link to="/chi-siamo" className="inline-flex items-center text-vci-green font-bold hover:gap-2 transition-all">
+            <Link to="/chi-siamo" className="inline-flex items-center text-vci-yellow font-bold hover:gap-2 transition-all">
               Leggi la nostra storia <ArrowRight className="ml-2" size={20} />
             </Link>
           </div>
@@ -143,14 +143,14 @@ export const Home: React.FC = () => {
       </Section>
 
       {/* --- FINAL CTA --- */}
-      <Section bg="green" className="text-center">
-        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6">Pronto a fare il primo passo?</h2>
-        <p className="text-vci-sand text-lg mb-10 max-w-2xl mx-auto">
+      <Section bg="yellow" className="text-center">
+        <h2 className="text-3xl md:text-5xl font-serif font-bold mb-6 text-white">Pronto a fare il primo passo?</h2>
+        <p className="text-vci-lightYellow text-lg mb-10 max-w-2xl mx-auto">
           Che tu voglia camminare, aiutare nell'organizzazione o proporre un'idea, c'è spazio per te in VCI.
         </p>
         <Link 
           to="/partecipa" 
-          className="inline-block bg-white text-vci-green px-10 py-4 rounded-full font-bold text-lg hover:bg-vci-sand transition-colors shadow-lg"
+          className="inline-block bg-white text-vci-yellow px-10 py-4 rounded-full font-bold text-lg hover:bg-vci-lightYellow transition-colors shadow-lg"
         >
           Unisciti alla Community
         </Link>

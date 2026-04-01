@@ -17,11 +17,11 @@ export const Blog: React.FC = () => (
             <div className="p-6 flex-grow">
               <div className="flex justify-between items-center text-xs text-gray-400 mb-3">
                 <span>{post.date}</span>
-                <span className="text-vci-green font-medium">{post.category}</span>
+                <span className="text-vci-yellow font-medium">{post.category}</span>
               </div>
               <h3 className="text-xl font-bold mb-3">{post.title}</h3>
               <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
-              <button className="text-vci-green font-bold text-sm hover:underline">Leggi tutto</button>
+              <button className="text-vci-yellow font-bold text-sm hover:underline">Leggi tutto</button>
             </div>
           </div>
         ))}

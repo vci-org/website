@@ -3,6 +3,8 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, Mail, MapPin } from 'lucide-react';
 import { SiFacebook, SiInstagram } from '@icons-pack/react-simple-icons';
 import { NAV_ITEMS } from '../constants';
+import LogoMain from '../assets/VCI LOGO.png';
+import LogoBlu from '../assets/vci BLU.png';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -19,19 +21,21 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-vci-beige/95 backdrop-blur-sm shadow-sm border-b border-vci-green/10">
+    <header className="sticky top-0 z-50 bg-vci-beige/95 backdrop-blur-sm shadow-sm border-b border-vci-yellow/10">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <div
           onClick={() => handleNav('/')}
-          className="flex items-center space-x-2 cursor-pointer group"
+          className="flex items-center space-x-3 cursor-pointer group"
         >
-          <div className="w-10 h-10 bg-vci-green rounded-full flex items-center justify-center text-white font-serif font-bold text-lg group-hover:scale-105 transition-transform duration-300">
-            VCI
-          </div>
-          <div className="flex flex-col">
-            <span className="font-bold text-vci-green text-lg leading-tight tracking-tight">Veneto Comunità</span>
-            <span className="font-light text-vci-green text-sm leading-tight tracking-widest uppercase">Itinerante</span>
+          <img 
+            src={LogoMain} 
+            alt="VCI Logo" 
+            className="h-12 w-auto group-hover:scale-105 transition-transform duration-300" 
+          />
+          <div className="flex flex-col border-l border-vci-yellow/20 pl-3">
+            <span className="font-bold text-vci-yellow text-lg leading-tight tracking-tight">Veneto Comunità</span>
+            <span className="font-light text-vci-yellow text-sm leading-tight tracking-widest uppercase">Itinerante</span>
           </div>
         </div>
 
@@ -43,8 +47,8 @@ const Header: React.FC = () => {
               to={item.path}
               className={({ isActive }) =>
                 `text-sm font-medium transition-colors duration-200 ${isActive
-                  ? 'text-vci-green font-bold border-b-2 border-vci-green'
-                  : 'text-gray-600 hover:text-vci-green'
+                  ? 'text-vci-yellow font-bold border-b-2 border-vci-yellow'
+                  : 'text-gray-600 hover:text-vci-yellow'
                 }`
               }
             >
@@ -54,7 +58,7 @@ const Header: React.FC = () => {
 
           <button
             onClick={() => handleNav('/partecipa')}
-            className="group relative inline-flex items-center justify-center px-6 py-2.5 font-bold text-white transition-all duration-300 bg-vci-green rounded-full hover:bg-vci-lightGreen shadow-lg hover:shadow-vci-green/30 hover:-translate-y-0.5"
+            className="group relative inline-flex items-center justify-center px-6 py-2.5 font-bold text-white transition-all duration-300 bg-vci-yellow rounded-full hover:bg-vci-gold shadow-lg hover:shadow-vci-yellow/30 hover:-translate-y-0.5"
           >
             <span className="relative">Partecipa</span>
             <div className="absolute inset-0 rounded-full bg-white/20 scale-0 group-hover:scale-100 transition-transform duration-500 origin-center"></div>
@@ -79,7 +83,7 @@ const Header: React.FC = () => {
               key={item.path}
               onClick={() => handleNav(item.path)}
               className={`text-left text-lg py-2 px-2 rounded-lg ${location.pathname === item.path
-                ? 'bg-vci-green/10 text-vci-green font-bold'
+                ? 'bg-vci-yellow/10 text-vci-yellow font-bold'
                 : 'text-gray-700 hover:bg-gray-100'
                 }`}
             >
@@ -88,7 +92,7 @@ const Header: React.FC = () => {
           ))}
           <button
             onClick={() => handleNav('/partecipa')}
-            className="w-full bg-vci-green text-white py-4 rounded-2xl font-bold text-lg shadow-xl active:scale-95 transition-transform"
+            className="w-full bg-vci-yellow text-white py-4 rounded-2xl font-bold text-lg shadow-xl active:scale-95 transition-transform"
           >
             Partecipa Ora
           </button>
@@ -100,13 +104,14 @@ const Header: React.FC = () => {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-vci-green text-white pt-16 pb-8">
+    <footer className="bg-vci-yellow text-vci-darkBlue pt-16 pb-8">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
 
         {/* Brand */}
         <div className="space-y-4">
-          <h3 className="font-serif text-2xl font-bold">VCI</h3>
-          <p className="text-gray-200 text-sm leading-relaxed">
+          <img src={LogoBlu} alt="VCI Logo Blue" className="h-16 w-auto brightness-0 invert opacity-20 absolute pointer-events-none" />
+          <h3 className="font-serif text-3xl font-bold relative z-10">VCI</h3>
+          <p className="text-vci-darkBlue/80 text-sm leading-relaxed font-medium relative z-10">
             Camminiamo per unire comunità, territori e persone del Veneto. Unisciti al movimento che rallenta per andare lontano.
           </p>
         </div>
@@ -114,10 +119,10 @@ const Footer: React.FC = () => {
         {/* Links */}
         <div>
           <h4 className="font-bold text-lg mb-4 text-vci-blue">Esplora</h4>
-          <ul className="space-y-2 text-sm text-gray-200">
-            <li><NavLink to="/chi-siamo" className="hover:text-white hover:underline">Chi Siamo</NavLink></li>
-            <li><NavLink to="/progetti" className="hover:text-white hover:underline">Progetti</NavLink></li>
-            <li><NavLink to="/associazioni" className="hover:text-white hover:underline">Rete Associativa</NavLink></li>
+          <ul className="space-y-2 text-sm text-vci-darkBlue/70">
+            <li><NavLink to="/chi-siamo" className="hover:text-vci-darkBlue hover:underline">Chi Siamo</NavLink></li>
+            <li><NavLink to="/progetti" className="hover:text-vci-darkBlue hover:underline">Progetti</NavLink></li>
+            <li><NavLink to="/associazioni" className="hover:text-vci-darkBlue hover:underline">Rete Associativa</NavLink></li>
           </ul>
         </div>
 
@@ -149,7 +154,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 mt-12 pt-8 border-t border-white/10 text-center text-xs text-gray-400">
+      <div className="container mx-auto px-4 mt-12 pt-8 border-t border-vci-darkBlue/10 text-center text-xs text-vci-darkBlue/50">
         © {new Date().getFullYear()} Veneto Comunità Itinerante - Tutti i diritti riservati.
       </div>
     </footer>

@@ -8,7 +8,7 @@ import { PARTNERS } from '../constants';
 const getCategoryIcon = (category: string) => {
   if (!category) return <Users size={20} className="text-vci-blue" />;
   const cat = category.toLowerCase();
-  if (cat.includes('ambient') || cat.includes('natur') || cat.includes('eco') || cat.includes('verde') || cat.includes('animal')) return <Leaf size={20} className="text-vci-green" />;
+  if (cat.includes('ambient') || cat.includes('natur') || cat.includes('eco') || cat.includes('verde') || cat.includes('animal')) return <Leaf size={20} className="text-vci-yellow" />;
   if (cat.includes('agricol') || cat.includes('fattoria') || cat.includes('orto') || cat.includes('vino')) return <Wheat size={20} className="text-amber-600" />;
   if (cat.includes('social') || cat.includes('educazion') || cat.includes('scuola') || cat.includes('accoglienza') || cat.includes('donna')) return <HeartHandshake size={20} className="text-rose-500" />;
   if (cat.includes('cultur') || cat.includes('festival') || cat.includes('arte') || cat.includes('musica')) return <Palette size={20} className="text-purple-500" />;
@@ -27,7 +27,7 @@ const VenetoMap: React.FC<{ selectedProvince: string | null; onSelectProvince: (
          </defs>
          <path 
            d="M30,10 L60,5 L85,20 L95,50 L80,85 L50,95 L20,80 L5,50 L15,25 Z" 
-           className="fill-white stroke-vci-green stroke-[0.5]"
+           className="fill-white stroke-vci-yellow stroke-[0.5]"
            filter="url(#glow)"
          />
          
@@ -41,13 +41,13 @@ const VenetoMap: React.FC<{ selectedProvince: string | null; onSelectProvince: (
                cx={p.location.x} 
                cy={p.location.y} 
                r={selectedProvince === p.location.label ? 4 : 2} 
-               className={`transition-all duration-300 ${selectedProvince === p.location.label ? 'fill-vci-green' : 'fill-vci-blue group-hover:fill-vci-green'}`} 
+               className={`transition-all duration-300 ${selectedProvince === p.location.label ? 'fill-vci-yellow' : 'fill-vci-blue group-hover:fill-vci-yellow'}`} 
              />
              <text 
                 x={p.location.x} 
                 y={p.location.y + 5} 
                 textAnchor="middle" 
-                className={`text-[3px] font-sans pointer-events-none uppercase tracking-wider transition-colors ${selectedProvince === p.location.label ? 'fill-vci-green font-bold' : 'fill-gray-600'}`}
+                className={`text-[3px] font-sans pointer-events-none uppercase tracking-wider transition-colors ${selectedProvince === p.location.label ? 'fill-vci-yellow font-bold' : 'fill-gray-600'}`}
              >
                {p.location.label}
              </text>
@@ -97,7 +97,7 @@ export const Partners: React.FC = () => {
               <input 
                 type="text" 
                 placeholder="Cerca per nome, località o categoria..." 
-                className="w-full pl-12 pr-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:border-vci-green focus:ring-1 focus:ring-vci-green transition-all"
+                className="w-full pl-12 pr-4 py-3 rounded-full border border-gray-200 focus:outline-none focus:border-vci-yellow focus:ring-1 focus:ring-vci-yellow transition-all"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
@@ -114,7 +114,7 @@ export const Partners: React.FC = () => {
                 <div 
                   key={assoc.id} 
                   onClick={() => setSelectedAssoc(assoc)}
-                  className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 cursor-pointer hover:shadow-lg hover:border-vci-green/30 transition-all flex flex-col h-full"
+                  className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 cursor-pointer hover:shadow-lg hover:border-vci-yellow/30 transition-all flex flex-col h-full"
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div className="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center shrink-0 border border-gray-100 shadow-sm">
@@ -176,7 +176,7 @@ export const Partners: React.FC = () => {
 
             {(selectedAssoc.website || selectedAssoc.socials) && (
               <div className="mt-8 pt-8 border-t border-gray-100">
-                <h3 className="text-xl font-bold text-vci-green mb-4">Contatti & Info</h3>
+                <h3 className="text-xl font-bold text-vci-yellow mb-4">Contatti & Info</h3>
                 <div className="space-y-4">
                   {selectedAssoc.website && (
                     <a href={selectedAssoc.website.startsWith('http') ? selectedAssoc.website : `https://${selectedAssoc.website}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-vci-blue font-bold hover:underline break-all">
