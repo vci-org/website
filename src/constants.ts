@@ -1,4 +1,4 @@
-import type { Event, Team, MapPoint, BlogPost, NavItem } from './types';
+import type { Event, Team, MapPoint, NavItem } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
@@ -6,7 +6,6 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Progetti', path: '/progetti' },
   { label: 'Associazioni', path: '/associazioni' },
   { label: 'Diario Itinerante', path: '/diario' },
-  { label: 'Blog', path: '/blog' },
   { label: 'Info', path: '/info' },
   { label: 'Partecipa', path: '/partecipa' },
 ];
@@ -88,35 +87,6 @@ export const PARTNERS: MapPoint[] = [
   { id: 'p7', name: 'Rovigo', location: { x: 55, y: 80, label: 'Rovigo' } },
 ];
 
-export const BLOG_POSTS: BlogPost[] = [
-  {
-    id: 'b1',
-    title: 'Perché camminare unisce',
-    excerpt: 'Riflessioni sul potere del passo lento per costruire relazioni durature.',
-    date: '10 Ottobre 2023',
-    author: 'Marco Rossi',
-    imageUrl: 'https://picsum.photos/800/600?random=10',
-    category: 'Riflessioni',
-  },
-  {
-    id: 'b2',
-    title: 'Resoconto del Cammino delle Dolomiti',
-    excerpt: 'Tre giorni di sole, fatica e sorrisi. Ecco com’è andata.',
-    date: '25 Settembre 2023',
-    author: 'Giulia Bianchi',
-    imageUrl: 'https://picsum.photos/800/600?random=11',
-    category: 'Diario',
-  },
-  {
-    id: 'b3',
-    title: 'Intervista al Presidente',
-    excerpt: 'Il futuro di VCI e le nuove sfide per il territorio veneto.',
-    date: '1 Settembre 2023',
-    author: 'Redazione',
-    imageUrl: 'https://picsum.photos/800/600?random=12',
-    category: 'Interviste',
-  }
-];
 
 export const FAQ_ITEMS = [
   {

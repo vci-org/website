@@ -24,15 +24,6 @@ export interface MapPoint {
   location: { x: number; y: number; label: string }; // Coordinates for the SVG map
 }
 
-export interface BlogPost {
-  id: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  author: string;
-  imageUrl: string;
-  category: string;
-}
 
 export interface NavItem {
   label: string;

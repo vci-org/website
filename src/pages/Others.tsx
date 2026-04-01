@@ -1,34 +1,8 @@
 import React from 'react';
 import { PageHeader, Section } from '../components/Shared';
-import { BLOG_POSTS, FAQ_ITEMS } from '../constants';
+import { FAQ_ITEMS } from '../constants';
 import { ChevronDown } from 'lucide-react';
 
-// --- BLOG PAGE ---
-export const Blog: React.FC = () => (
-  <>
-    <PageHeader title="Diario Itinerante" subtitle="Racconti, pensieri e voci dalla strada." />
-    <Section bg="beige">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {BLOG_POSTS.map(post => (
-          <div key={post.id} className="bg-white rounded-2xl overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
-            <div className="h-48 overflow-hidden">
-              <img src={post.imageUrl} alt={post.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="p-6 flex-grow">
-              <div className="flex justify-between items-center text-xs text-gray-400 mb-3">
-                <span>{post.date}</span>
-                <span className="text-vci-yellow font-medium">{post.category}</span>
-              </div>
-              <h3 className="text-xl font-bold mb-3">{post.title}</h3>
-              <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
-              <button className="text-vci-yellow font-bold text-sm hover:underline">Leggi tutto</button>
-            </div>
-          </div>
-        ))}
-      </div>
-    </Section>
-  </>
-);
 
 // --- MEDIA PAGE ---
 export const Media: React.FC = () => (
