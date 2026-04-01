@@ -248,7 +248,7 @@ export const ASSOCIATIONS: Association[] = [
     "id": "vaghe-stelle",
     "name": "Vaghe Stelle",
     "category": "Cammino, eventi, sostenibilit\u00e0, cultura",
-    "locationLabel": "Vicenza",
+    "locationLabel": "Vicenza (VI)",
     "website": "https://www.equistiamo.org/vaghe-stelle/chi-siamo.html",
     "socials": "Facebook:https://www.facebook.com/trekkingvaghestelle/photos/ Instagram:https://www.instagram.com/trekking_vaghestelle/",
     "edition": 2
@@ -293,7 +293,7 @@ export const ASSOCIATIONS: Association[] = [
     "id": "sulle-orme",
     "name": "Sulle orme",
     "category": "associazione sociale",
-    "locationLabel": "Fitt\u00e0 (VR)",
+    "locationLabel": "Fitt\u00e0 di Soave (VR)",
     "website": "http://www.sulleorme.com/",
     "socials": "Facebook: https://www.facebook.com/SulleOrmeOdv",
     "edition": 2
@@ -392,7 +392,7 @@ export const ASSOCIATIONS: Association[] = [
     "id": "tizia-di-asiagio",
     "name": "tizia di Asiagio?",
     "category": "",
-    "locationLabel": "",
+    "locationLabel": "Asiago (VI)",
     "website": "",
     "socials": "",
     "edition": 2
@@ -473,7 +473,7 @@ export const ASSOCIATIONS: Association[] = [
     "id": "su-pa-i-monti",
     "name": "Su pa i monti",
     "category": "racconti dei Colli Euganei",
-    "locationLabel": "",
+    "locationLabel": "(PD)",
     "website": "",
     "socials": "Instagram: https://www.instagram.com/supaimonti/?hl=it Facebook: https://www.facebook.com/supaimonti/",
     "edition": 4
@@ -518,7 +518,7 @@ export const ASSOCIATIONS: Association[] = [
     "id": "recupero-animali-selvatici-vi",
     "name": "recupero animali selvatici VI",
     "category": "tutela animali selvatici",
-    "locationLabel": "",
+    "locationLabel": "Vicenza (VI)",
     "website": "",
     "socials": "Instagram: https://www.instagram.com/recupero.animali.selvatici.vi/?hl=it Facebook: https://www.facebook.com/CentroRecuperoAnimaliSelvaticiVillabalzana/?locale=it_IT",
     "edition": 4

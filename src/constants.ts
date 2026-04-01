@@ -76,15 +76,14 @@ export const TEAMS: Team[] = [
   }
 ];
 
-// Rough coordinates for a simple abstract map of Veneto
 export const PARTNERS: MapPoint[] = [
-  { id: 'p1', name: 'Vicenza', location: { x: 40, y: 50, label: 'Vicenza' } },
-  { id: 'p2', name: 'Treviso', location: { x: 65, y: 40, label: 'Treviso' } },
-  { id: 'p3', name: 'Venezia', location: { x: 80, y: 60, label: 'Venezia' } },
-  { id: 'p4', name: 'Belluno', location: { x: 70, y: 20, label: 'Belluno' } },
-  { id: 'p5', name: 'Padova', location: { x: 60, y: 70, label: 'Padova' } },
-  { id: 'p6', name: 'Verona', location: { x: 20, y: 60, label: 'Verona' } },
-  { id: 'p7', name: 'Rovigo', location: { x: 55, y: 80, label: 'Rovigo' } },
+  { id: 'p1', name: 'Vicenza', code: 'VI', location: { x: 38, y: 48, label: 'Vicenza' } },
+  { id: 'p2', name: 'Treviso', code: 'TV', location: { x: 71, y: 44, label: 'Treviso' } },
+  { id: 'p3', name: 'Venezia', code: 'VE', location: { x: 81, y: 65, label: 'Venezia' } },
+  { id: 'p4', name: 'Belluno', code: 'BL', location: { x: 71, y: 18, label: 'Belluno' } },
+  { id: 'p5', name: 'Padova', code: 'PD', location: { x: 53, y: 72, label: 'Padova' } },
+  { id: 'p6', name: 'Verona', code: 'VR', location: { x: 15, y: 60, label: 'Verona' } },
+  { id: 'p7', name: 'Rovigo', code: 'RO', location: { x: 48, y: 92, label: 'Rovigo' } },
 ];
 
 

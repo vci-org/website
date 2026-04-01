@@ -21,6 +21,7 @@ export interface Team {
 export interface MapPoint {
   id: string;
   name: string;
+  code: string; // e.g., "VI", "VR"
   location: { x: number; y: number; label: string }; // Coordinates for the SVG map
 }
 
