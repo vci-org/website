@@ -50,8 +50,8 @@ const VenetoMap: React.FC<{
 
       <svg viewBox="0 0 3346 3385" className="w-full h-full drop-shadow-2xl">
         <defs>
-          <filter id="realGlow" x="-10%" y="-10%" width="120%" height="120%">
-            <feGaussianBlur stdDeviation="15" result="blur" />
+          <filter id="realGlow" filterUnits="userSpaceOnUse" x="0" y="0" width="3346" height="3385">
+            <feGaussianBlur stdDeviation="20" result="blur" />
             <feComposite in="SourceGraphic" in2="blur" operator="over" />
           </filter>
         </defs>
@@ -70,7 +70,7 @@ const VenetoMap: React.FC<{
               d={provData.d}
               transform={provData.transform}
               onClick={() => onSelectProvince(isSelected ? null : p.location.label)}
-              className={`cursor-pointer transition-all duration-500 stroke-blue-700/10 stroke-[2] ${isSelected ? 'fill-vci-yellow' : 'fill-white hover:fill-blue-50'
+              className={`cursor-pointer transition-all duration-500 stroke-blue-700/10 stroke-[2] outline-none ${isSelected ? 'fill-vci-yellow' : 'fill-white hover:fill-blue-50'
                 }`}
               style={{
                 filter: isSelected ? 'url(#realGlow)' : 'none',
@@ -91,10 +91,10 @@ const VenetoMap: React.FC<{
             <button
               key={p.id}
               onClick={() => onSelectProvince(isSelected ? null : p.location.label)}
-              className={`absolute transform -translate-x-1/2 -translate-y-1/2 pointer-events-auto transition-all duration-500 flex flex-col items-center group
+              className={`absolute transform -translate-x-1/2 -translate-y-1/2 pointer-events-auto transition-all duration-500 flex flex-col items-center group rounded-full outline-none focus:outline-none focus:ring-0
                 ${isSelected ? 'z-20 scale-110' : 'z-10 hover:scale-105'}
               `}
-              style={{ left: `${p.location.x}%`, top: `${p.location.y}%` }}
+              style={{ left: `${p.location.x}%`, top: `${p.location.y}%`, WebkitTapHighlightColor: 'transparent' }}
             >
               {count > 0 && (
                 <span className={`px-2.5 py-1 rounded-full text-[10px] font-black mb-1.5 shadow-sm transition-colors border
