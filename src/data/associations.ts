@@ -4,7 +4,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "conca-doro",
     "name": "Conca d'Oro",
-    "category": "coop. fattoria sociale",
+    "category": "Sociale e Diritti",
     "locationLabel": "Bassano del Grappa (VI)",
     "website": "http://concadoro.org/",
     "socials": "Instagram: https://www.instagram.com/concadoro.fattoriasociale/ Facebook: https://www.facebook.com/concadoro.fattoriasociale/?locale=it_IT",
@@ -13,7 +13,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "case-bac\u00f2",
     "name": "Case Bac\u00f2",
-    "category": "ecovillaggio/cohousing",
+    "category": "Ambiente e Natura",
     "locationLabel": "Crespano del Grappa (TV)",
     "website": "http://www.casebaco.it/",
     "socials": "Facebook: https://www.facebook.com/EcovillaggioCaseBaco/?locale=it_IT",
@@ -22,7 +22,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "salvatica",
     "name": "Salvatica",
-    "category": "educazione ambientale",
+    "category": "Ambiente e Natura",
     "locationLabel": "Pieve del Grappa (TV)",
     "website": "http://www.salvatica.it/",
     "socials": "Instagram: https://www.instagram.com/salvatica.it/ Facebook: https://www.facebook.com/salvaticassociazioneculturale/",
@@ -31,7 +31,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "renzo-masolo",
     "name": "Renzo Masolo",
-    "category": "mobilit\u00e0 sostenibile e sicurezza",
+    "category": "Economia e Politica",
     "locationLabel": "Possagno (TV)",
     "website": "https://www.renzomasolo.com/",
     "socials": "Instagram: https://www.instagram.com/renzo_masolo/ Facebook: https://www.facebook.com/renzomasolo/?locale=it_IT Linkedin: https://it.linkedin.com/in/renzo-masolo-257b62211?trk=public_profile_browsemap",
@@ -40,7 +40,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "ass-belluno-donna",
     "name": "ass. Belluno Donna",
-    "category": "centro antiviolenza",
+    "category": "Sociale e Diritti",
     "locationLabel": "Belluno (BL)",
     "website": "http://bellunodonna.it/",
     "socials": "Facebook: https://www.facebook.com/bellunodonna",
@@ -49,7 +49,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "nina-kakaw",
     "name": "Nina Kakaw",
-    "category": "cioccolateria solidale",
+    "category": "Sociale e Diritti",
     "locationLabel": "Belluno (BL)",
     "website": "https://ninakakaw.com/",
     "socials": "Instagram: https://www.instagram.com/ninakakaw/ Facebook: https://www.facebook.com/NINAKAKAWcioccolateriasociale/?locale=it_IT",
@@ -58,7 +58,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "coop-societ\u00e0-nuova",
     "name": "coop. Societ\u00e0 Nuova",
-    "category": "coop. sociale",
+    "category": "Sociale e Diritti",
     "locationLabel": "Belluno (BL)",
     "website": "http://www.societanuova.eu/",
     "socials": "Instagram: https://www.instagram.com/cooperativasocietanuova/?hl=it Facebook: https://www.facebook.com/cooperativasocietanuova/?locale=it_IT",
@@ -67,7 +67,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "la-porta-fucsia",
     "name": "La Porta Fucsia",
-    "category": "officina delle arti",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Vittorio Veneto (TV)",
     "website": "",
     "socials": "Instagram: https://www.instagram.com/explore/locations/337274446621229/la-porta-fucsia-officina-delle-arti/ Facebook: https://www.facebook.com/LAPORTAFUCSIA/?locale=it_IT",
@@ -76,7 +76,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "plant-enlightenment",
     "name": "Plant Enlightenment",
-    "category": "tutela ambientale",
+    "category": "Ambiente e Natura",
     "locationLabel": "Castelfranco Veneto (TV)",
     "website": "",
     "socials": "Instagram: https://www.instagram.com/plantenlightenment/ Facebook: https://www.facebook.com/Plantenlightenment/?locale=it_IT",
@@ -85,7 +85,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "nonno-andrea",
     "name": "Nonno Andrea",
-    "category": "azienda agricola biodiversa",
+    "category": "Agricoltura e Cibo",
     "locationLabel": "Villorba (TV)",
     "website": "https://www.nonnoandrea.it/",
     "socials": "Instagram: https://www.instagram.com/nonnoandrea_/ Facebook: https://www.facebook.com/nonnoandrea/?locale=it_IT",
@@ -94,7 +94,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "rio-selva",
     "name": "Rio Selva",
-    "category": "biofattoria",
+    "category": "Agricoltura e Cibo",
     "locationLabel": "Preganziol (TV)",
     "website": "https://www.biofattoriarioselva.it/",
     "socials": "Instagram: https://www.instagram.com/biofattoria_rio_selva/ Facebook: https://www.facebook.com/fattoriarioselva/",
@@ -103,7 +103,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "venice-climate-camp",
     "name": "Venice Climate Camp",
-    "category": "giustizia climatica",
+    "category": "Ambiente e Natura",
     "locationLabel": "Venezia (VE)",
     "website": "https://www.veniceclimatecamp.com/en/",
     "socials": "Instagram: https://www.instagram.com/venice_climate_camp/  Facebook: https://www.facebook.com/veniceclimatecamp/",
@@ -112,7 +112,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "penny-wirton",
     "name": "Penny Wirton",
-    "category": "scuola gratuita di italiano per migranti",
+    "category": "Sociale e Diritti",
     "locationLabel": "Chioggia (VE)",
     "website": "https://www.scuolapennywirton.it/penny-wirton-chioggia/",
     "socials": "Facebook: https://www.facebook.com/penny.wirtonroma",
@@ -121,7 +121,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "mediterranea",
     "name": "Mediterranea",
-    "category": "giustizia sociale",
+    "category": "Sociale e Diritti",
     "locationLabel": "Venezia (VE)",
     "website": "https://mediterranearescue.org/it/chi-siamo",
     "socials": "Facebook: https://www.facebook.com/RescueMedVenezia/about/",
@@ -130,7 +130,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "oasi-ca-di-mezzo",
     "name": "Oasi Ca' di Mezzo",
-    "category": "area di fitodepurazione",
+    "category": "Ambiente e Natura",
     "locationLabel": "Codevigo (PD)",
     "website": "https://saccisica.it/item/oasi-di-ca-di-mezzo/",
     "socials": "Facebook: https://www.facebook.com/Saccisica",
@@ -139,7 +139,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "le-corti-benedettine",
     "name": "Le Corti Benedettine",
-    "category": "tutela dei patrimoni di architettura rurale",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Correzzola (PD)",
     "website": "http://www.lecortibenedettine.it/",
     "socials": "Instagram: https://www.instagram.com/lecortibenedettine/ Facebook: https://www.facebook.com/LeCortiBenedettineAssociazione/",
@@ -148,7 +148,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "va-oltre--la-tenuta",
     "name": "Va Oltre - La Tenuta",
-    "category": "azienda agricola",
+    "category": "Agricoltura e Cibo",
     "locationLabel": "Bovolenta (PD)",
     "website": "https://www.vaoltrelatenuta.it/",
     "socials": "Instagram: https://www.instagram.com/vaoltre/ Facebook: https://www.facebook.com/vaoltre/",
@@ -157,7 +157,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "cantina-agriturismo-tasinato",
     "name": "cantina agriturismo Tasinato",
-    "category": "azienda agricola",
+    "category": "Agricoltura e Cibo",
     "locationLabel": "Due Carrare (PD)",
     "website": "http://www.cantinatasinato.it/",
     "socials": "Instagram: https://www.instagram.com/azienza_vitivinicola/ Facebook: https://www.facebook.com/CantinaAgriturismoTasinato",
@@ -166,7 +166,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "aperdifiato",
     "name": "Aperdifiato",
-    "category": "educazione ambientale",
+    "category": "Ambiente e Natura",
     "locationLabel": "Montegrotto Terme (PD)",
     "website": "http://aperdifiato.com/",
     "socials": "Instagram: https://www.instagram.com/naturaaperdifiato/ Facebook: https://www.facebook.com/Aperdifiato/",
@@ -175,7 +175,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "la-saggezza-della-terra",
     "name": "La saggezza della terra",
-    "category": "azienda agricola",
+    "category": "Agricoltura e Cibo",
     "locationLabel": "Monselice (PD)",
     "website": "https://www.lasaggezzadellaterra.com/",
     "socials": "Facebook: https://www.facebook.com/lasaggezzadellaterra",
@@ -184,7 +184,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "toni-mazzetti",
     "name": "Toni Mazzetti",
-    "category": "professore e naturalista - toponomastica Colli Euganei",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "",
     "website": "",
     "socials": "Facebook: https://www.facebook.com/toni.mazzetti.1/",
@@ -193,7 +193,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "le-terre-del-fiume",
     "name": "Le terre del fiume",
-    "category": "azienda agrigola - rigenerazione ambientale",
+    "category": "Agricoltura e Cibo",
     "locationLabel": "Padova (PD)",
     "website": "",
     "socials": "Facebook: https://www.facebook.com/LeTerredelFiumeAziendaAgricola/",
@@ -202,7 +202,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "banca-etica",
     "name": "Banca Etica",
-    "category": "finanza etica",
+    "category": "Economia e Politica",
     "locationLabel": "Padova (PD)",
     "website": "https://www.bancaetica.it/",
     "socials": "Instagram: https://www.instagram.com/bancaetica/",
@@ -211,7 +211,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "matteo-zennaro",
     "name": "Matteo Zennaro",
-    "category": "ambiente e societ\u00e0 in amministrazione",
+    "category": "Economia e Politica",
     "locationLabel": "",
     "website": "",
     "socials": "",
@@ -220,7 +220,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "benedetto-zaccaria",
     "name": "Benedetto Zaccaria",
-    "category": "ambiente e societ\u00e0 in amministrazione",
+    "category": "Economia e Politica",
     "locationLabel": "",
     "website": "",
     "socials": "",
@@ -229,7 +229,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "protezione-civile-colli-berici",
     "name": "Protezione Civile Colli Berici",
-    "category": "",
+    "category": "Sociale e Diritti",
     "locationLabel": "Longare (VI)",
     "website": "",
     "socials": "",
@@ -238,7 +238,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "un-posto-in-cui-tornare",
     "name": "Un Posto In Cui Tornare",
-    "category": "Festival, spot, musica e sostenibilit\u00e0",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Barbarano (VI)",
     "website": "https://www.unpostoincuitornare.it/",
     "socials": "Instagram: https://www.facebook.com/unpostoincuitornare/?locale=it_IT Facebook: https://www.instagram.com/unpostoincuitornare/",
@@ -247,7 +247,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "vaghe-stelle",
     "name": "Vaghe Stelle",
-    "category": "Cammino, eventi, sostenibilit\u00e0, cultura",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Vicenza (VI)",
     "website": "https://www.equistiamo.org/vaghe-stelle/chi-siamo.html",
     "socials": "Facebook:https://www.facebook.com/trekkingvaghestelle/photos/ Instagram:https://www.instagram.com/trekking_vaghestelle/",
@@ -256,7 +256,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "a-regola-dorto",
     "name": "A regola d'orto",
-    "category": "azienda agricola sostenibile",
+    "category": "Agricoltura e Cibo",
     "locationLabel": "Monteviale (VI)",
     "website": "http://www.aregoladorto.it/",
     "socials": "Instagram: https://www.instagram.com/aregoladorto/ Facebook: https://www.facebook.com/aregoladorto",
@@ -265,7 +265,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "cristina--guarda",
     "name": "Cristina  Guarda",
-    "category": "Membro Parlamento Europeo",
+    "category": "Economia e Politica",
     "locationLabel": "",
     "website": "",
     "socials": "Facebook:https://www.facebook.com/guarda.cristina/?locale=it_IT Instagram:https://www.instagram.com/cristina_guarda/",
@@ -274,7 +274,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "fornaci-rosse",
     "name": "Fornaci rosse",
-    "category": "festival politico-culturale",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Vicenza (VI)",
     "website": "http://www.fornacirosse.it/",
     "socials": "Instagram: https://www.instagram.com/fornacirosse.vi/ Facebook: https://www.facebook.com/FornaciRosse",
@@ -283,7 +283,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "piccola-osteria-itinerante",
     "name": "Piccola Osteria Itinerante",
-    "category": "Produzione locale prodotti su 4 ruote",
+    "category": "Agricoltura e Cibo",
     "locationLabel": "Castelgomberto (VI)",
     "website": "",
     "socials": "Facebook:https://www.facebook.com/PiccolaOsteriaItinerante/ Instagram:https://www.instagram.com/piccolaosteriaitinerante/",
@@ -292,7 +292,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "sulle-orme",
     "name": "Sulle orme",
-    "category": "associazione sociale",
+    "category": "Sociale e Diritti",
     "locationLabel": "Fitt\u00e0 di Soave (VR)",
     "website": "http://www.sulleorme.com/",
     "socials": "Facebook: https://www.facebook.com/SulleOrmeOdv",
@@ -301,7 +301,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "rete-verso",
     "name": "Rete Verso",
-    "category": "educazione alla sostenibilit\u00e0",
+    "category": "Ambiente e Natura",
     "locationLabel": "Verona (VR)",
     "website": "https://reteverso.eu/",
     "socials": "Instagram: https://www.instagram.com/rete_verso/ Facebook: https://www.facebook.com/reteverso/",
@@ -310,7 +310,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "treebu",
     "name": "Treebu",
-    "category": "start up innovativa progetti sostenibilit\u00e0",
+    "category": "Economia e Politica",
     "locationLabel": "Verona (VR)",
     "website": "https://treebu.io/#who",
     "socials": "Facebook: https://www.facebook.com/Treebu.io# Instagram: https://www.instagram.com/treebu.io",
@@ -319,7 +319,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "villa-buri-onlus",
     "name": "Villa Buri onlus",
-    "category": "educazione e sostenibilit\u00e0 in villa",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Verona (VR)",
     "website": "http://www.villaburi.it/",
     "socials": "Instagram: https://www.instagram.com/villa_buri_onlus/ facebook: https://www.facebook.com/VillaBuri/?locale=it_IT",
@@ -328,7 +328,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "one-bridge-to-idomeni",
     "name": "One Bridge to idomeni",
-    "category": "onlus veronese lavora sui confini europei",
+    "category": "Sociale e Diritti",
     "locationLabel": "Verona (VR)",
     "website": "https://www.onebridgeto.com",
     "socials": "facebook: https://www.facebook.com/onebridgetoidomeni Instagram: https://www.instagram.com/onebridgetoidomeni/",
@@ -337,7 +337,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "associaziona-nazionale-vittime-civili-di-guerra",
     "name": "Associaziona Nazionale Vittime Civili di Guerra",
-    "category": "tutela interessi civili vittime della guerra e sviluppo cultura della pace",
+    "category": "Sociale e Diritti",
     "locationLabel": "Verona (VR)",
     "website": "https://www.anvcg.it/sedi/",
     "socials": "Facebook: https://www.facebook.com/anvcgONLUS/?locale=it_IT",
@@ -346,7 +346,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "progetto-natura-verona-lago-odv",
     "name": "Progetto Natura Verona Lago odv",
-    "category": "salvaguardia e cura fauna selvatica",
+    "category": "Ambiente e Natura",
     "locationLabel": "Lazise (VR)",
     "website": "http://progettonaturaveronalago.it/",
     "socials": "Instagram: https://www.instagram.com/progettonaturaveronalago/ Facebook: https://www.facebook.com/progettonaturaveronalago",
@@ -355,7 +355,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "associazione-giovani-al-porto",
     "name": "Associazione giovani al Porto",
-    "category": "iniziativa che offre spazio ai giovani, eventi culturali",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Lazise (VR)",
     "website": "https://bento.me/giovanialporto",
     "socials": "Facebook: https://www.facebook.com/assgiovanialporto/?locale=it_IT Instagram: https://www.instagram.com/ass.giovanialporto/?hl=it",
@@ -364,7 +364,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "equipe-natura-guide",
     "name": "Equipe Natura Guide",
-    "category": "guide naturalistiche - divulgazione",
+    "category": "Ambiente e Natura",
     "locationLabel": "Monte Baldo (VR)",
     "website": "https://www.equipenatura.it/homepage/",
     "socials": "Instagram: https://www.instagram.com/equipeguide/ Facebook: https://www.facebook.com/equipenaturaguide/?locale=it_IT",
@@ -373,7 +373,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "la-cordata",
     "name": "La cordata",
-    "category": "comunit\u00e0 educativa - progetto SAI (Sistema di Accoglienza e Integrazione)",
+    "category": "Sociale e Diritti",
     "locationLabel": "Bosco Chiesanuova (VR)",
     "website": "https://comunitalacordata.wordpress.com/informazioni/",
     "socials": "Facebook: https://www.facebook.com/lacordata.com.edu/?locale=it_IT",
@@ -382,7 +382,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "officina-sociopolitica-altovicentino",
     "name": "Officina Sociopolitica Altovicentino",
-    "category": "scuola di politica itinerante",
+    "category": "Economia e Politica",
     "locationLabel": "Schio (VI)",
     "website": "https://www.venetolab.org/scuole/",
     "socials": "Instagram: https://www.instagram.com/off.sociopolitica_altovic/ Facebook: https://www.facebook.com/OfficinaSociopoliticaAltovicentino/?locale=it_IT",
@@ -391,7 +391,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "tizia-di-asiagio",
     "name": "tizia di Asiagio?",
-    "category": "",
+    "category": "Sociale e Diritti",
     "locationLabel": "Asiago (VI)",
     "website": "",
     "socials": "",
@@ -400,7 +400,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "la-carta-di-altino",
     "name": "La Carta di Altino",
-    "category": "ass. di promozione sociale",
+    "category": "Sociale e Diritti",
     "locationLabel": "Quarto d'Altino (VE)",
     "website": "https://www.lacartadialtino.it/",
     "socials": "Instagram: https://www.instagram.com/la_carta_di_altino/ Facebook: https://www.facebook.com/LaCartaDiAltino/",
@@ -409,7 +409,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "verde-bene-comune-di-jesolo",
     "name": "Verde Bene Comune di Jesolo",
-    "category": "tutela territorio urbano ed extra-urbano",
+    "category": "Ambiente e Natura",
     "locationLabel": "Jesolo (VE)",
     "website": "https://verdebenecomune.wordpress.com/",
     "socials": "Facebook: https://www.facebook.com/groups/371772186352585/?locale=it_IT",
@@ -418,7 +418,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "il-vento-in-tasca",
     "name": "Il Vento In Tasca",
-    "category": "ass. di promozione sociale",
+    "category": "Sociale e Diritti",
     "locationLabel": "Punta Sabbioni (VE)",
     "website": "https://www.ilventointasca.it/#where",
     "socials": "",
@@ -427,7 +427,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "marevivo-veneto",
     "name": "Marevivo Veneto",
-    "category": "ass. di tutela ambientale",
+    "category": "Ambiente e Natura",
     "locationLabel": "Chioggia (VE)",
     "website": "https://marevivoveneto.it/",
     "socials": "Facebook: https://www.facebook.com/marevivoveneto/",
@@ -436,7 +436,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "parrocchia-fornaci",
     "name": "parrocchia Fornaci",
-    "category": "educazione e gioco",
+    "category": "Sociale e Diritti",
     "locationLabel": "Porto Viro (RO)",
     "website": "",
     "socials": "Facebook: https://www.facebook.com/p/Parrocchia-di-Fornaci-100069299244349/?locale=it_IT",
@@ -445,7 +445,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "effat\u00e0",
     "name": "Effat\u00e0",
-    "category": "odv a supporto e accoglienza giovani",
+    "category": "Sociale e Diritti",
     "locationLabel": "Adria (RO)",
     "website": "https://effataodv.org/",
     "socials": "",
@@ -454,7 +454,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "voci-per-la-libert\u00e0-vxl",
     "name": "Voci per la Libert\u00e0 #VXL",
-    "category": "associazione culturale",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Villadose (RO)",
     "website": "http://vociperlaliberta.it/",
     "socials": "Instagram: https://www.instagram.com/vociperlaliberta/ Facebook: https://www.facebook.com/vocixlaliberta",
@@ -463,7 +463,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "seta",
     "name": "S.E.T.A.",
-    "category": "odv per tutela ambientale",
+    "category": "Ambiente e Natura",
     "locationLabel": "Solesino (PD)",
     "website": "https://setaodv.wordpress.com/",
     "socials": "Instagram: https://www.instagram.com/setaodv/ Facebook: https://www.facebook.com/SETAodv/?locale=it_IT",
@@ -472,7 +472,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "su-pa-i-monti",
     "name": "Su pa i monti",
-    "category": "racconti dei Colli Euganei",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "(PD)",
     "website": "",
     "socials": "Instagram: https://www.instagram.com/supaimonti/?hl=it Facebook: https://www.facebook.com/supaimonti/",
@@ -481,7 +481,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "comitato-lasciateci-respirare",
     "name": "comitato lasciateci respirare",
-    "category": "sensibilizzazione ambientale, diritti ambientali",
+    "category": "Ambiente e Natura",
     "locationLabel": "Monselice (PD)",
     "website": "",
     "socials": "Facebook: https://www.facebook.com/comitatolasciatecirespirare.monselice/?locale=it_",
@@ -490,7 +490,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "aps-la-vespa",
     "name": "A.P.S. La Vespa",
-    "category": "ambiente, territorio e cultura",
+    "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Battaglia Terme (PD)",
     "website": "https://www.lavespa.org/",
     "socials": "Facebook: https://www.facebook.com/groups/73963633329/",
@@ -499,7 +499,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "le-valli",
     "name": "Le Valli",
-    "category": "ass. di promozione sociale",
+    "category": "Sociale e Diritti",
     "locationLabel": "Val Liona (VI)",
     "website": "https://www.visitvalliona.org/coop-le-valli/\nlevalli.wordpress.com/",
     "socials": "Instagram: https://www.instagram.com/le.valli/ Facebook: https://www.facebook.com/cooplevalli",
@@ -508,7 +508,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "sos-anfibi",
     "name": "SOS anfibi",
-    "category": "tutela anfibi",
+    "category": "Ambiente e Natura",
     "locationLabel": "Castegnero (VI)",
     "website": "https://www.sosanfibi.it/",
     "socials": "Facebook: https://www.facebook.com/sosanfibivicenza/?locale=it_IT Instagram: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fsosanfibivicenza&h=AT3Hu883iJEuCOT_x_U29sffwuDV8lY5xyBCKkqmh1JqXmgp5GmdHSnt31LT3SZSBAvdZbtnfim2enrtApmEOaOz0Ojj1GrpAdFvcz7pOuv9ZkNlqSZRSBa3xnEwvmnuc2hBbMGZspb4U_li6E86",
@@ -517,7 +517,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "recupero-animali-selvatici-vi",
     "name": "recupero animali selvatici VI",
-    "category": "tutela animali selvatici",
+    "category": "Ambiente e Natura",
     "locationLabel": "Vicenza (VI)",
     "website": "",
     "socials": "Instagram: https://www.instagram.com/recupero.animali.selvatici.vi/?hl=it Facebook: https://www.facebook.com/CentroRecuperoAnimaliSelvaticiVillabalzana/?locale=it_IT",
@@ -526,7 +526,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "az-agr-sermondi",
     "name": "az. agr. Sermondi",
-    "category": "azienda agricola",
+    "category": "Agricoltura e Cibo",
     "locationLabel": "Castegnero (VI)",
     "website": "https://www.fattoriedeisaporiveneti.it/aziende/az-agr-sermondi-s-s/\nhttp://www.aziendaagricolasermondi.it/",
     "socials": "Instagram: https://www.instagram.com/azienda_agricola_sermondi/ Facebook: https://www.facebook.com/p/Azienda-agricola-Sermondi-100064328906209/?locale=it_IT",
@@ -535,7 +535,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "piano-infinito",
     "name": "Piano Infinito",
-    "category": "cooperativa sociale",
+    "category": "Sociale e Diritti",
     "locationLabel": "Montecchio Maggiore (VI)",
     "website": "https://www.pianoinfinitocoop.it/",
     "socials": "Facebook: https://www.facebook.com/367532593324516?ref=embed_page Instagram: https://www.instagram.com/pianoinfinito/",
@@ -544,7 +544,7 @@ export const ASSOCIATIONS: Association[] = [
   {
     "id": "i-boschi-che-resistono",
     "name": "I boschi che resistono",
-    "category": "resistenza popolare contro TAV e tutela territorio",
+    "category": "Economia e Politica",
     "locationLabel": "Vicenza (VI)",
     "website": "https://iboschicheresistono.info/",
     "socials": "Facebook: https://www.facebook.com/notavicenza Instagram: https://www.instagram.com/iboschicheresistono",

@@ -2,16 +2,16 @@ import React, { useState, useMemo } from 'react';
 import { PageHeader, Section } from '../components/Shared';
 import { ASSOCIATIONS } from '../data/associations';
 import type { Association } from '../types';
-import { MapPin, ExternalLink, Search, X, Leaf, Wheat, HeartHandshake, Palette, Users } from 'lucide-react';
+import { MapPin, ExternalLink, Search, X, Leaf, Wheat, HeartHandshake, Palette, Users, Globe } from 'lucide-react';
 import { PARTNERS } from '../constants';
 
 const getCategoryIcon = (category: string) => {
-  if (!category) return <Users size={20} className="text-vci-blue" />;
-  const cat = category.toLowerCase();
-  if (cat.includes('ambient') || cat.includes('natur') || cat.includes('eco') || cat.includes('verde') || cat.includes('animal')) return <Leaf size={20} className="text-vci-yellow" />;
-  if (cat.includes('agricol') || cat.includes('fattoria') || cat.includes('orto') || cat.includes('vino')) return <Wheat size={20} className="text-amber-600" />;
-  if (cat.includes('social') || cat.includes('educazion') || cat.includes('scuola') || cat.includes('accoglienza') || cat.includes('donna')) return <HeartHandshake size={20} className="text-rose-500" />;
-  if (cat.includes('cultur') || cat.includes('festival') || cat.includes('arte') || cat.includes('musica')) return <Palette size={20} className="text-purple-500" />;
+  const cat = (category || '').toLowerCase();
+  if (cat.includes('ambient') || cat.includes('natur')) return <Leaf size={20} className="text-vci-yellow" />;
+  if (cat.includes('agricol') || cat.includes('cibo')) return <Wheat size={20} className="text-amber-600" />;
+  if (cat.includes('social') || cat.includes('diritti')) return <HeartHandshake size={20} className="text-rose-500" />;
+  if (cat.includes('cultur') || cat.includes('creativit')) return <Palette size={20} className="text-purple-500" />;
+  if (cat.includes('econom') || cat.includes('politic')) return <Globe size={20} className="text-vci-blue" />;
   return <Users size={20} className="text-vci-blue" />;
 };
 
@@ -138,6 +138,24 @@ export const Partners: React.FC = () => {
     });
   }, [searchTerm, selectedProvince]);
 
+  const CATEGORY_ORDER = [
+    "Ambiente e Natura",
+    "Agricoltura e Cibo",
+    "Sociale e Diritti",
+    "Cultura e Creativit\u00e0",
+    "Economia e Politica"
+  ];
+
+  const grouped = useMemo(() => {
+    const groups: Record<string, Association[]> = {};
+    filtered.forEach(assoc => {
+      const cat = assoc.category || 'Altro';
+      if (!groups[cat]) groups[cat] = [];
+      groups[cat].push(assoc);
+    });
+    return groups;
+  }, [filtered]);
+
   return (
     <>
       <PageHeader
@@ -184,29 +202,47 @@ export const Partners: React.FC = () => {
               Nessuna associazione trovata per questa ricerca.
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filtered.map(assoc => (
-                <div
-                  key={assoc.id}
-                  onClick={() => setSelectedAssoc(assoc)}
-                  className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 cursor-pointer hover:shadow-lg hover:border-vci-yellow/30 transition-all flex flex-col h-full"
-                >
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center shrink-0 border border-gray-100 shadow-sm">
-                      {getCategoryIcon(assoc.category)}
+            <div className="space-y-16">
+              {CATEGORY_ORDER.map(category => {
+                const group = grouped[category];
+                if (!group || group.length === 0) return null;
+
+                return (
+                  <div key={category} className="animate-in fade-in slide-in-from-bottom-4 duration-700">
+                    <div className="flex items-center gap-4 mb-8">
+                      <div className="bg-white p-2 rounded-xl shadow-sm border border-gray-100">
+                        {getCategoryIcon(category)}
+                      </div>
+                      <h3 className="text-2xl font-bold text-vci-darkBlue font-serif">
+                        {category}
+                        <span className="ml-3 text-sm font-sans font-medium text-gray-400 bg-gray-50 px-2 py-0.5 rounded-full border border-gray-100">
+                          {group.length}
+                        </span>
+                      </h3>
+                      <div className="h-px bg-gradient-to-r from-gray-200 to-transparent flex-grow"></div>
                     </div>
-                    {assoc.category && (
-                      <span className="text-xs font-bold px-2 py-1 bg-gray-100 text-gray-600 rounded-md text-right">
-                        {assoc.category}
-                      </span>
-                    )}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {group.sort((a, b) => a.name.localeCompare(b.name)).map(assoc => (
+                        <div
+                          key={assoc.id}
+                          onClick={() => setSelectedAssoc(assoc)}
+                          className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 cursor-pointer hover:shadow-xl hover:border-vci-yellow/30 hover:-translate-y-1 transition-all flex flex-col h-full group"
+                        >
+                          <div className="flex items-start justify-between mb-4">
+                            <div className="w-10 h-10 bg-gray-50 rounded-full flex items-center justify-center shrink-0 border border-gray-100 shadow-sm group-hover:bg-vci-yellow/10 transition-colors">
+                              {getCategoryIcon(assoc.category)}
+                            </div>
+                          </div>
+                          <h4 className="text-xl font-bold text-gray-800 mb-2 leading-tight group-hover:text-vci-yellow transition-colors">{assoc.name}</h4>
+                          <p className="text-sm text-gray-500 flex items-center gap-1 mt-auto pt-4">
+                            <MapPin size={14} className="text-vci-blue" /> {assoc.locationLabel}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{assoc.name}</h3>
-                  <p className="text-sm text-gray-500 flex items-center gap-1 mt-auto pt-4">
-                    <MapPin size={14} /> {assoc.locationLabel}
-                  </p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
