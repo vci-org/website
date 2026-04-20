@@ -28,10 +28,10 @@ const Header: React.FC = () => {
           onClick={() => handleNav('/')}
           className="flex items-center space-x-3 cursor-pointer group"
         >
-          <img 
-            src={LogoMain} 
-            alt="VCI Logo" 
-            className="h-12 w-auto group-hover:scale-105 transition-transform duration-300" 
+          <img
+            src={LogoMain}
+            alt="VCI Logo"
+            className="h-12 w-auto group-hover:scale-105 transition-transform duration-300"
           />
           <div className="flex flex-col border-l border-vci-yellow/20 pl-3">
             <span className="font-bold text-vci-yellow text-lg leading-tight tracking-tight">Veneto Comunità</span>
@@ -112,7 +112,7 @@ const Footer: React.FC = () => {
           <img src={LogoBlu} alt="VCI Logo Blue" className="h-16 w-auto brightness-0 invert opacity-20 absolute pointer-events-none" />
           <h3 className="font-serif text-3xl font-bold relative z-10">VCI</h3>
           <p className="text-vci-darkBlue/80 text-sm leading-relaxed font-medium relative z-10">
-            Camminiamo per unire comunità, territori e persone del Veneto. Unisciti al movimento che rallenta per andare lontano.
+            Camminiamo per conoscere, incontrare, unire persone e territori. Unisciti al movimento che rallenta per andare lontano.
           </p>
         </div>
 

@@ -28,9 +28,9 @@ export const Home: React.FC = () => {
             Benvenuti in VCI
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 leading-tight animate-fade-in-up">
-            Camminiamo per unire <br />
-            <span className="text-vci-lightYellow italic">comunità</span>, <span className="text-vci-blue italic">territori</span> <br />
-            e <span className="text-vci-lightYellow italic">persone</span>.
+            Camminiamo per conoscere <br />
+            <span className="text-vci-lightYellow italic">incontrare</span> e unire, <br />
+            <span className="text-vci-lightYellow italic">persone</span> e <span className="text-vci-blue italic">territori</span>.
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light animate-fade-in-up delay-100">
             Un'associazione che riscopre il Veneto a passo lento, tessendo relazioni e valorizzando la bellezza locale, creando una rete di comunicazione tra le realtà locali.
