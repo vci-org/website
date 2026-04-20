@@ -87,9 +87,9 @@ export const Home: React.FC = () => {
             <div className="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 mb-6">
               <Heart size={32} />
             </div>
-            <h3 className="text-2xl font-serif font-bold text-gray-800 mb-3">Progetti Annuali</h3>
-            <p className="text-gray-600 mb-6">Dai festival culturali ai progetti di rigenerazione urbana. Il cammino è solo l'inizio.</p>
-            <Link to="/progetti" className="text-amber-600 font-semibold hover:underline decoration-2 underline-offset-4">I nostri progetti</Link>
+            <h3 className="text-2xl font-serif font-bold text-gray-800 mb-3">Ecocamp</h3>
+            <p className="text-gray-600 mb-6">Fermarsi per costruire e prendersi cura del territorio. Momenti di sosta che diventano azione concreta.</p>
+            <Link to="/progetti" className="text-amber-600 font-semibold hover:underline decoration-2 underline-offset-4">Scopri i nostri Ecocamp</Link>
           </div>
         </div>
       </Section>
