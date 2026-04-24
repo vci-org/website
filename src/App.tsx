@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Layout } from './components/Layout';
+import { Seo } from './components/Seo';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Partners } from './pages/Partners';
@@ -23,6 +24,7 @@ const App: React.FC = () => {
   return (
     <HashRouter>
       <ScrollToTop />
+      <Seo />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,6 +35,7 @@ const App: React.FC = () => {
           <Route path="/associazioni" element={<Partners />} />
           <Route path="/partecipa" element={<Participate />} />
           <Route path="/info" element={<Info />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </Layout>
     </HashRouter>
