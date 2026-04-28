@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
     title: 'Ecocamp Trieste 2026',
     description: 'Un weekend a Trieste tra cammino, frontiera e servizio con Linea d\'Ombra.',
     fullDescription: 'Ecocamp Trieste 2026 nasce in una città di confine, dove il cammino incontra le storie della Rotta Balcanica. Insieme ad ASCS e Linea d\'Ombra vivremo un weekend di ascolto, servizio e comunità.',
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Italy-Slovenia_State_boundary_Val_Rosandra.jpg',
+    imageUrl: 'https://picsum.photos/1200/600?random=100',
     status: 'future',
     googleFormUrl: 'https://forms.gle/example',
     partners: ['ASCS', 'Linea d\'Ombra', 'ICS Trieste'],

@@ -42,7 +42,7 @@ export const ProjectCard: React.FC<{ project: Project, isCompact?: boolean }> = 
           <span className={`px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest shadow-sm ${
             project.status === 'future' ? 'bg-vci-yellow text-white' : 'bg-gray-100 text-gray-500'
           }`}>
-            {project.status === 'future' ? 'Futuro' : 'Passato'}
+            {project.status === 'future' ? 'In programma' : 'Concluso'}
           </span>
         </div>
       </div>
