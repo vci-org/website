@@ -37,7 +37,7 @@ export const Home: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-200">
             <Link
-              to="/partecipa"
+              to="/progetti"
               className="px-8 py-4 bg-white text-vci-yellow rounded-full font-bold hover:bg-vci-lightYellow transition-all transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-2"
             >
               Partecipa al prossimo evento <ArrowRight size={20} />
