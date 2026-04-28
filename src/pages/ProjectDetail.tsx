@@ -67,7 +67,7 @@ export const ProjectDetail: React.FC = () => {
             {project.content?.map((item, index) => (
               <div key={index} className="animate-fade-in">
                 {item.type === 'text' ? (
-                  <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                  <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed whitespace-pre-line">
                     <p>{item.value}</p>
                   </div>
                 ) : (

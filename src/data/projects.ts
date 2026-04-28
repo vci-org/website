@@ -4,15 +4,25 @@ export const PROJECTS: Project[] = [
   {
     id: 'ecocamp-trieste-2026',
     title: 'Ecocamp Trieste 2026',
-    description: 'A Trieste a Giugno. Focus su guerra e Rotta Balcanica per i migranti.',
-    fullDescription: 'Un campo ecosolidale a Trieste nel mese di Giugno. L\'obiettivo è riflettere e agire attorno alle tematiche della guerra e approfondire la questione della Rotta Balcanica intrapresa da migliaia di migranti, per sensibilizzare e creare accoglienza attiva.',
-    imageUrl: 'https://picsum.photos/1200/600?random=100',
+    description: 'Un weekend a Trieste tra cammino, frontiera e servizio con Linea d\'Ombra.',
+    fullDescription: 'Ecocamp Trieste 2026 nasce in una città di confine, dove il cammino incontra le storie della Rotta Balcanica. Insieme ad ASCS e Linea d\'Ombra vivremo un weekend di ascolto, servizio e comunità.',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/5/5b/Italy-Slovenia_State_boundary_Val_Rosandra.jpg',
     status: 'future',
     googleFormUrl: 'https://forms.gle/example',
+    partners: ['ASCS', 'Linea d\'Ombra', 'ICS Trieste'],
     content: [
-      { type: 'text', value: 'L\'Ecocamp 2026 si terrà a Trieste, una città di frontiera dove le storie di ieri e di oggi si intrecciano. Esploreremo i sentieri della Rotta Balcanica e incontreremo chi ogni giorno opera per l\'accoglienza.' },
-      { type: 'image', value: 'https://picsum.photos/800/500?random=101' },
-      { type: 'text', value: 'Workshop, momenti di riflessione e attività sul campo saranno il cuore di questa esperienza.' }
+      {
+        type: 'text',
+        value: 'Il senso del progetto\nTrieste è un luogo in cui il confine non è solo una linea sulla mappa: è passaggio, incontro, attesa, arrivo. Per questo l\'Ecocamp sarà costruito attorno a tre parole: camminare, ascoltare, servire.'
+      },
+      {
+        type: 'text',
+        value: 'Cosa vivremo\nCi saranno momenti di incontro con chi conosce da vicino il territorio, un servizio concreto accanto a Linea d\'Ombra e un cammino verso la frontiera slovena. Non sarà solo un weekend da raccontare: sarà un modo per mettersi in ascolto, con i piedi per terra e lo sguardo un po\' più largo.'
+      },
+      {
+        type: 'text',
+        value: 'Partecipazione\nI dettagli pratici su alloggio, trasporti e quota verranno condivisi appena definiti.'
+      }
     ]
   },
   {
