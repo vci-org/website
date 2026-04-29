@@ -53,9 +53,10 @@ export interface ArchiveEdition {
   description: string;
   days: {
     dayNumber: number;
+    date: string;
+    weekLabel?: string;
     startPoint: string;
     endPoint: string;
-    difficulty: string;
     associationsMet: string[];
     gpxUrl?: string; // For komoot or gpx iframe/link
   }[];

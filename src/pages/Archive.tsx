@@ -2,7 +2,7 @@ import React from 'react';
 import { PageHeader, Section } from '../components/Shared';
 import { ARCHIVE_EDITIONS } from '../data/archive';
 import { ASSOCIATIONS } from '../data/associations';
-import { MapPin, Map, ExternalLink } from 'lucide-react';
+import { ArrowRight, CalendarDays, ExternalLink, Map, MapPin, Route } from 'lucide-react';
 
 export const Diario: React.FC = () => {
   // Helper to find association name by ID
@@ -22,85 +22,119 @@ export const Diario: React.FC = () => {
           </p>
         </div>
 
-        <div className="relative border-l-2 md:border-l-4 border-vci-yellow/30 ml-4 md:ml-8 pl-8 md:pl-12 space-y-20 pb-12">
-          {[...ARCHIVE_EDITIONS].reverse().map((edition) => (
-            <div key={edition.id} className="relative">
-              {/* Timeline Dot */}
-              <div className="absolute -left-[45px] md:-left-[64px] top-0 w-8 h-8 md:w-10 md:h-10 bg-white border-4 border-vci-yellow rounded-full shadow-md z-10 flex items-center justify-center">
-                <div className="w-2 h-2 md:w-3 md:h-3 bg-vci-yellow rounded-full"></div>
-              </div>
+        <div className="space-y-24 pb-12">
+          {[...ARCHIVE_EDITIONS].reverse().map((edition) => {
+            const firstDay = edition.days[0];
+            const lastDay = edition.days[edition.days.length - 1];
+            const routeLabel = firstDay && lastDay ? `${firstDay.startPoint} → ${lastDay.endPoint}` : '';
 
-              {/* Edition Header */}
-              <div className="mb-8">
-                <span className="inline-block px-4 py-1.5 bg-vci-yellow text-white text-sm font-bold rounded-full mb-3 shadow-sm tracking-widest uppercase">
-                  {edition.year} • {edition.duration}
-                </span>
-                <h2 className="text-3xl md:text-4xl font-bold font-serif text-vci-darkBlue mb-3">{edition.title}</h2>
-                <p className="text-gray-600 text-lg italic max-w-3xl">"{edition.description}"</p>
-              </div>
+            return (
+              <article key={edition.id} className="relative">
+                {/* Edition Header */}
+                <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end mb-8">
+                  <div>
+                    <span className="inline-block px-4 py-1.5 bg-vci-yellow text-white text-sm font-bold rounded-full mb-3 shadow-sm tracking-widest uppercase">
+                      {edition.year} • {edition.duration}
+                    </span>
+                    <h2 className="text-3xl md:text-4xl font-bold font-serif text-vci-darkBlue mb-3">{edition.title}</h2>
+                    <p className="text-gray-600 text-lg italic max-w-3xl">"{edition.description}"</p>
+                  </div>
 
-              {/* Days Grid */}
-              <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-                {edition.days.map((day) => (
-                  <div key={day.dayNumber} className="bg-white rounded-3xl p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow relative overflow-hidden group">
-                    {/* Day Badge */}
-                    <div className="absolute top-0 right-0 bg-vci-yellow text-white font-bold py-1 px-4 rounded-bl-xl text-sm opacity-90 group-hover:opacity-100 transition-opacity">
-                      Giorno {day.dayNumber}
-                    </div>
-
-                    <div className="flex flex-col mb-6 pt-2">
-                      <h3 className="text-xl font-bold text-gray-800 flex items-center gap-2 mb-3">
-                        {day.startPoint} <MapPin size={16} className="text-gray-400 shrink-0" /> {day.endPoint}
-                      </h3>
-                      <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider self-start
-                           ${day.difficulty === 'Facile' ? 'bg-green-100 text-green-700' :
-                          day.difficulty === 'Medio' ? 'bg-yellow-100 text-yellow-700' :
-                            'bg-red-100 text-red-700'}`}>
-                        {day.difficulty}
-                      </span>
-                    </div>
-
-                    <div className="space-y-6">
+                  <div className="border-l-4 border-vci-yellow pl-5 py-1">
+                    <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Percorso</p>
+                    <p className="text-lg font-bold text-vci-darkBlue flex items-center gap-2">
+                      <Route size={20} className="text-vci-yellow shrink-0" />
+                      {routeLabel}
+                    </p>
+                    <div className="mt-4 grid grid-cols-2 gap-3 text-sm">
                       <div>
-                        <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Realtà Incontrate</h4>
-                        {day.associationsMet.length > 0 ? (
-                          <div className="flex flex-wrap gap-2">
-                            {day.associationsMet.map(assocId => (
-                              <span key={assocId} className="px-3 py-1 bg-gray-50 border border-gray-100 text-gray-700 rounded-lg text-sm font-medium">
-                                {getAssociationName(assocId)}
-                              </span>
-                            ))}
-                          </div>
-                        ) : (
-                          <p className="text-gray-500 text-sm italic">Nessuna realtà formale incontrata.</p>
-                        )}
+                        <p className="text-gray-400 font-bold uppercase tracking-wider text-[11px]">Tappe</p>
+                        <p className="font-bold text-gray-800">{edition.days.length}</p>
                       </div>
-
                       <div>
-                        <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-1">
-                          <Map size={14} /> Mappa Tappa
-                        </h4>
-                        <div className="bg-gray-50 border-2 border-dashed border-gray-200 rounded-xl py-6 flex flex-col items-center justify-center text-center group-hover:border-vci-yellow/50 transition-colors">
-                          {day.gpxUrl ? (
-                            <a href={day.gpxUrl} target="_blank" rel="noopener noreferrer" className="text-vci-yellow font-bold flex items-center gap-2 hover:underline">
-                              Apri Profilo Altimetrico <ExternalLink size={16} />
-                            </a>
-                          ) : (
-                            <p className="text-gray-400 text-sm">Traccia GPX / Komoot in arrivo.</p>
-                          )}
-                        </div>
+                        <p className="text-gray-400 font-bold uppercase tracking-wider text-[11px]">Date</p>
+                        <p className="font-bold text-gray-800">{firstDay?.date} - {lastDay?.date}</p>
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
 
-            </div>
-          ))}
+                {/* Stages Rail */}
+                <div className="relative">
+                  <div className="absolute left-0 right-0 top-5 h-0.5 bg-vci-yellow/30" aria-hidden="true" />
+                  <div className="flex gap-5 overflow-x-auto overscroll-x-contain scroll-smooth snap-x snap-mandatory pb-5 pt-1">
+                    {edition.days.map((day) => (
+                      <div key={day.dayNumber} className="relative min-w-[260px] sm:min-w-[300px] snap-start">
+                        <div className="mb-4 flex items-center gap-3">
+                          <div className="w-10 h-10 rounded-full bg-white border-4 border-vci-yellow shadow-sm flex items-center justify-center z-10">
+                            <span className="text-sm font-bold text-vci-darkBlue">{day.dayNumber}</span>
+                          </div>
+                          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-gray-100 text-vci-darkBlue text-xs font-bold uppercase tracking-wider shadow-sm">
+                            <CalendarDays size={14} /> {day.date}
+                          </span>
+                        </div>
+
+                        <div className="bg-white rounded-2xl p-5 shadow-md border border-gray-100 hover:shadow-xl transition-shadow group h-full">
+                          {day.weekLabel && (
+                            <p className="text-vci-yellow text-xs font-bold uppercase tracking-wider mb-3">
+                              {day.weekLabel}
+                            </p>
+                          )}
+
+                          <div className="space-y-3">
+                            <div className="flex items-start gap-3">
+                              <MapPin size={18} className="text-gray-400 shrink-0 mt-0.5" />
+                              <div>
+                                <p className="text-xs font-bold uppercase tracking-wider text-gray-400">Partenza</p>
+                                <p className="font-bold text-gray-800">{day.startPoint}</p>
+                              </div>
+                            </div>
+                            <div className="pl-[27px] text-vci-yellow">
+                              <ArrowRight size={18} />
+                            </div>
+                            <div className="flex items-start gap-3">
+                              <MapPin size={18} className="text-vci-yellow shrink-0 mt-0.5" />
+                              <div>
+                                <p className="text-xs font-bold uppercase tracking-wider text-gray-400">Arrivo</p>
+                                <p className="font-bold text-gray-800">{day.endPoint}</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          {day.associationsMet.length > 0 && (
+                            <div className="mt-6 pt-5 border-t border-gray-100">
+                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Realtà Incontrate</h4>
+                              <div className="flex flex-wrap gap-2">
+                                {day.associationsMet.map(assocId => (
+                                  <span key={assocId} className="px-3 py-1 bg-gray-50 border border-gray-100 text-gray-700 rounded-lg text-sm font-medium">
+                                    {getAssociationName(assocId)}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+
+                          {day.gpxUrl && (
+                            <div className="mt-6 pt-5 border-t border-gray-100">
+                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-1">
+                                <Map size={14} /> Mappa Tappa
+                              </h4>
+                              <a href={day.gpxUrl} target="_blank" rel="noopener noreferrer" className="text-vci-yellow font-bold flex items-center gap-2 hover:underline">
+                                Apri Profilo Altimetrico <ExternalLink size={16} />
+                              </a>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
 
       </Section>
     </>
   );
 };
-
