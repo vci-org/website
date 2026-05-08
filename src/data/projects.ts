@@ -220,8 +220,8 @@ export const PROJECTS: Project[] = [
   {
     id: 'cammino-2024',
     title: 'Cammino 2024',
-    description: 'Attraverso le colline Trevigiane.',
-    fullDescription: 'L\'edizione 2024 ci ha portati tra i vigneti e le colline di Treviso, incontrando cooperative sociali e agricoltori eroici.',
+    description: 'Da Treviso a Rovigo, seguendo il Sile, la laguna veneziana e il delta del Po.',
+    fullDescription: 'Nel 2024 abbiamo ripreso il cammino del Veneto attraversando nuovi tratti e raggiungendo la provincia di Rovigo. Da Treviso siamo scesi lungo la ciclabile del Sile fino alla laguna veneziana, per poi proseguire attraverso Lido, Pellestrina, Chioggia e il delta del Po fino a Rovigo.',
     imageUrl: cammino2024Cover,
     status: 'past',
     gallery: [
@@ -236,7 +236,22 @@ export const PROJECTS: Project[] = [
       { src: cammino2024Photo9, alt: 'Ultimi momenti del Cammino 2024' }
     ],
     content: [
-      { type: 'text', value: 'Camminare tra le colline del Prosecco ci ha permesso di scoprire il volto umano dietro la produzione industriale, parlando d\'agricoltura sociale.' }
+      {
+        type: 'text',
+        value: 'La rotta\nPartendo da Treviso abbiamo percorso a piedi la ciclabile del fiume Sile, un tracciato unico e suggestivo che segue l\'omonimo fiume trevigiano tra scorci d\'acqua, paesaggi lenti e panorami inattesi. Raggiunti Quarto d\'Altino e Jesolo, il cammino si è aperto verso la laguna veneziana.'
+      },
+      {
+        type: 'text',
+        value: 'Laguna e delta\nDa Punta Sabbioni abbiamo proseguito fino a Chioggia attraversando il Lido di Venezia e l\'isola di Pellestrina. Poi il passo è sceso verso sud, entrando nel paesaggio del delta del Po: Porto Viro, Adria, Fenil del Turco e infine Rovigo, nuova tappa nel nostro percorso attraverso il Veneto.'
+      },
+      {
+        type: 'text',
+        value: 'Le tappe\nMercoledì 04/09: Treviso - Quarto d\'Altino, 18 km. Giovedì 05/09: Quarto d\'Altino - Jesolo, 27 km. Venerdì 06/09: Jesolo - Punta Sabbioni, 23 km. Sabato 07/09: Punta Sabbioni - Chioggia, 21 km. Domenica 08/09: Chioggia - Porto Viro, 24 km. Lunedì 09/09: Porto Viro - Adria, 24 km. Martedì 10/09: Adria - Fenil del Turco, 18 km. Mercoledì 11/09: Fenil del Turco - Rovigo, 10 km.'
+      },
+      {
+        type: 'text',
+        value: 'Il passo del cammino\nQuesta settimana ha tenuto insieme fiume, mare, isole, laguna e pianura. È stata una traversata fatta di passaggi morbidi e paesaggi d\'acqua, un modo per rimettersi in cammino e allargare ancora la nostra mappa del Veneto.'
+      }
     ]
   },
   {
