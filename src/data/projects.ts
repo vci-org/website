@@ -1,4 +1,5 @@
 import type { Project } from '../types';
+import ecocamp2026Cover from '../assets/photos/ecocamp2026/ciotole.jpg';
 import ecocamp2025Cover from '../assets/photos/ecocamp2025/IMG_8994.jpg';
 import ecocamp2025Photo1 from '../assets/photos/ecocamp2025/IMG_8994.jpg';
 import ecocamp2025Photo2 from '../assets/photos/ecocamp2025/IMG_8982.jpg';
@@ -16,6 +17,15 @@ import ecocamp2024Photo5 from '../assets/photos/ecocamp2024/IMG_3024.jpg';
 import ecocamp2024Photo6 from '../assets/photos/ecocamp2024/IMG_3118.jpg';
 import ecocamp2024Photo7 from '../assets/photos/ecocamp2024/IMG_3151.jpg';
 import ecocamp2024Photo8 from '../assets/photos/ecocamp2024/IMG_3229.jpg';
+import cammino2025Cover from '../assets/photos/cammino2025/IMG_0311.jpg';
+import cammino2025Photo1 from '../assets/photos/cammino2025/IMG_0311.jpg';
+import cammino2025Photo2 from '../assets/photos/cammino2025/IMG_0318.jpg';
+import cammino2025Photo3 from '../assets/photos/cammino2025/IMG_0348.jpg';
+import cammino2025Photo4 from '../assets/photos/cammino2025/IMG_0644.jpg';
+import cammino2025Photo5 from '../assets/photos/cammino2025/IMG_0676.jpg';
+import cammino2025Photo6 from '../assets/photos/cammino2025/IMG_0763.jpg';
+import cammino2025Photo7 from '../assets/photos/cammino2025/IMG_0824.jpg';
+import cammino2025Photo8 from '../assets/photos/cammino2025/IMG_0861.jpg';
 import cammino2024Cover from '../assets/photos/cammino2024/IMG_8245.jpg';
 import cammino2024Photo1 from '../assets/photos/cammino2024/IMG_8245.jpg';
 import cammino2024Photo2 from '../assets/photos/cammino2024/IMG_8140.jpg';
@@ -26,14 +36,21 @@ import cammino2024Photo6 from '../assets/photos/cammino2024/IMG_8241.jpg';
 import cammino2024Photo7 from '../assets/photos/cammino2024/IMG_8280.jpg';
 import cammino2024Photo8 from '../assets/photos/cammino2024/IMG_8496.jpg';
 import cammino2024Photo9 from '../assets/photos/cammino2024/IMG_8498.jpg';
-import cammino2022Cover from '../assets/photos/cammino2022/84aa9117-fb1a-45e1-9df4-c0d376b982f3.jpg';
-import cammino2022Photo1 from '../assets/photos/cammino2022/84aa9117-fb1a-45e1-9df4-c0d376b982f3.jpg';
-import cammino2022Photo2 from '../assets/photos/cammino2022/55f0d54a-4a52-4093-8b9d-03a7046e937c.jpg';
-import cammino2022Photo3 from '../assets/photos/cammino2022/IMG-20260508-WA0040.jpg';
-import cammino2022Photo4 from '../assets/photos/cammino2022/IMG-20260508-WA0041.jpg';
-import cammino2022Photo5 from '../assets/photos/cammino2022/IMG-20260508-WA0042.jpg';
-import cammino2022Photo6 from '../assets/photos/cammino2022/IMG_3645.jpg';
-import cammino2022Photo7 from '../assets/photos/cammino2022/WhatsApp Image 2026-04-23 at 21.32.02.jpeg';
+import cammino2023Cover from '../assets/photos/cammino2023/84aa9117-fb1a-45e1-9df4-c0d376b982f3.jpg';
+import cammino2023Photo1 from '../assets/photos/cammino2023/84aa9117-fb1a-45e1-9df4-c0d376b982f3.jpg';
+import cammino2023Photo2 from '../assets/photos/cammino2023/55f0d54a-4a52-4093-8b9d-03a7046e937c.jpg';
+import cammino2023Photo3 from '../assets/photos/cammino2023/IMG-20260508-WA0040.jpg';
+import cammino2023Photo4 from '../assets/photos/cammino2023/IMG-20260508-WA0041.jpg';
+import cammino2023Photo5 from '../assets/photos/cammino2023/IMG-20260508-WA0042.jpg';
+import cammino2023Photo6 from '../assets/photos/cammino2023/IMG_3645.jpg';
+import cammino2023Photo7 from '../assets/photos/cammino2023/WhatsApp Image 2026-04-23 at 21.32.02.jpeg';
+import cammino2022Cover from '../assets/photos/cammino2022/20220906_105012.jpg';
+import cammino2022Photo1 from '../assets/photos/cammino2022/20220906_105012.jpg';
+import cammino2022Photo2 from '../assets/photos/cammino2022/IMG_20220904_094237.jpg';
+import cammino2022Photo3 from '../assets/photos/cammino2022/IMG_20220911_110224.jpg';
+import cammino2022Photo4 from '../assets/photos/cammino2022/IMG_20220913_160327.jpg';
+import cammino2022Photo5 from '../assets/photos/cammino2022/IMG_20220916_143227.jpg';
+import cammino2022Photo6 from '../assets/photos/cammino2022/IMG_6006.jpg';
 
 export const PROJECTS: Project[] = [
   {
@@ -41,7 +58,7 @@ export const PROJECTS: Project[] = [
     title: 'Ecocamp Trieste 2026',
     description: 'Weekend 19-21 giugno a Trieste, tra servizio, formazione e incontro con le realtà che vivono il confine.',
     fullDescription: 'Ecocamp Trieste 2026 è un weekend immersivo per giovani tra i 18 e i 35 anni che vogliono mettersi in gioco, entrare in contatto con realtà complesse e vivere il confine da una prospettiva diversa. Dal 19 al 21 giugno saremo ospiti a Villa Ara, accompagnati da ASCS nell\'incontro con le realtà attive sul territorio di Trieste.',
-    imageUrl: 'https://picsum.photos/1200/600?random=100',
+    imageUrl: ecocamp2026Cover,
     status: 'future',
     googleFormUrl: 'https://docs.google.com/forms/d/11d8cz_1uoU1sJSJj_eLQMLEfKZumlVW8qI3ZEMk6akM/edit',
     partners: ['ASCS', 'Linea d\'Ombra ODV', 'Diaconia Valdese', 'Caritas', 'Donk Associazione', 'Villa Ara'],
@@ -164,6 +181,42 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: 'cammino-2025',
+    title: 'Cammino 2025',
+    description: 'Da Rovigo a Vicenza, una settimana tra Adige, Colli Euganei, Abbazia di Praglia e Alta Via dei Berici.',
+    fullDescription: 'Nel 2025 siamo ripartiti da Rovigo, da dove il cammino si era interrotto, per attraversare la pianura seguendo l\'Adige e poi entrare nel paesaggio dei Colli Euganei e dei Colli Berici. Una settimana di passi, salite, borghi e incontri fino alla meta finale: Vicenza.',
+    imageUrl: cammino2025Cover,
+    status: 'past',
+    gallery: [
+      { src: cammino2025Photo1, alt: 'Paesaggio attraversato durante il Cammino 2025' },
+      { src: cammino2025Photo2, alt: 'Tappa del Cammino 2025 tra sentieri e colline' },
+      { src: cammino2025Photo3, alt: 'Partecipanti lungo il percorso del Cammino 2025' },
+      { src: cammino2025Photo4, alt: 'Vista panoramica dal Cammino 2025' },
+      { src: cammino2025Photo5, alt: 'Momento di cammino collettivo nel Cammino 2025' },
+      { src: cammino2025Photo6, alt: 'Scorcio naturale attraversato nel Cammino 2025' },
+      { src: cammino2025Photo7, alt: 'Gruppo e territorio durante il Cammino 2025' },
+      { src: cammino2025Photo8, alt: 'Ricordo dal Cammino 2025 verso Vicenza' }
+    ],
+    content: [
+      {
+        type: 'text',
+        value: 'La rotta\nRipartendo da Rovigo, abbiamo seguito per un tratto il corso dell\'Adige, lasciandoci alle spalle la pianura per addentrarci tra le meraviglie dei Colli Euganei. Este è stata la porta d\'ingresso ai colli, poi il cammino è proseguito tra vigneti, sentieri e viste panoramiche fino ad Arquà Petrarca, uno dei borghi più belli d\'Italia.'
+      },
+      {
+        type: 'text',
+        value: 'Dagli Euganei ai Berici\nDopo Arquà Petrarca siamo passati per l\'Abbazia di Praglia e le zone di Teolo, prima di scendere verso valle e risalire negli altri colli della nostra regione: i Colli Berici. Da Noventa Vicentina abbiamo imboccato l\'Alta Via dei Berici fino a Pederiva, attraversando Castegnero e Brendola prima dell\'arrivo a Vicenza.'
+      },
+      {
+        type: 'text',
+        value: 'Le tappe\nSabato 06/09: Rovigo - Vighizzolo d\'Este, 25 km. Domenica 07/09: Vighizzolo d\'Este - Arquà Petrarca, 21 km. Lunedì 08/09: Arquà Petrarca - Abbazia di Praglia, 21 km. Martedì 09/09: Abbazia di Praglia - Teolo, 15 km. Mercoledì 10/09: Teolo - Saline, Noventa Vicentina, 25 km. Giovedì 11/09: Saline - Pederiva, Grancona, 24 km. Venerdì 12/09: Pederiva - Castegnero, 22 km. Sabato 13/09: Castegnero - Brendola, 19 km. Domenica 14/09: Brendola - Vicenza, 18 km.'
+      },
+      {
+        type: 'text',
+        value: 'Il passo del cammino\nQuesta settimana ha tenuto insieme fatica e bellezza: la pianura, i vigneti, i sentieri, le salite e le discese, i borghi e le abbazie. È stato un modo per continuare a conoscere il Veneto a passo lento, lasciando che il paesaggio cambiasse giorno dopo giorno e che il gruppo trovasse il proprio ritmo.'
+      }
+    ]
+  },
+  {
     id: 'cammino-2024',
     title: 'Cammino 2024',
     description: 'Attraverso le colline Trevigiane.',
@@ -190,8 +243,17 @@ export const PROJECTS: Project[] = [
     title: 'Cammino 2023',
     description: 'Esplorando la costa Veneziana.',
     fullDescription: 'Da Chioggia a Caorle, un viaggio lungo l\'acqua per capire l\'impatto del cambiamento climatico sulle nostre coste.',
-    imageUrl: 'https://picsum.photos/1200/600?random=106',
+    imageUrl: cammino2023Cover,
     status: 'past',
+    gallery: [
+      { src: cammino2023Photo1, alt: 'Paesaggio e percorso del Cammino 2023' },
+      { src: cammino2023Photo2, alt: 'Gruppo del Cammino 2023 lungo una tappa' },
+      { src: cammino2023Photo3, alt: 'Scorcio attraversato durante il Cammino 2023' },
+      { src: cammino2023Photo4, alt: 'Momento condiviso durante il Cammino 2023' },
+      { src: cammino2023Photo5, alt: 'Partecipanti del Cammino 2023 in viaggio' },
+      { src: cammino2023Photo6, alt: 'Tappa e territorio del Cammino 2023' },
+      { src: cammino2023Photo7, alt: 'Ricordo dal Cammino 2023' }
+    ],
     content: [
       { type: 'text', value: 'L\'acqua è stata il filo conduttore del 2023. Abbiamo visto come il mare sta cambiando e cosa possiamo fare per preservare la laguna.' }
     ]
@@ -204,13 +266,12 @@ export const PROJECTS: Project[] = [
     imageUrl: cammino2022Cover,
     status: 'past',
     gallery: [
-      { src: cammino2022Photo1, alt: 'Paesaggio e percorso del Cammino 2022' },
-      { src: cammino2022Photo2, alt: 'Gruppo del Cammino 2022 lungo una tappa' },
-      { src: cammino2022Photo3, alt: 'Scorcio attraversato durante il Cammino 2022' },
-      { src: cammino2022Photo4, alt: 'Momento condiviso durante il Cammino 2022' },
-      { src: cammino2022Photo5, alt: 'Partecipanti del Cammino 2022 in viaggio' },
-      { src: cammino2022Photo6, alt: 'Tappa e territorio del Cammino 2022' },
-      { src: cammino2022Photo7, alt: 'Ricordo dal Cammino 2022' }
+      { src: cammino2022Photo1, alt: 'Paesaggio attraversato durante il Cammino 2022' },
+      { src: cammino2022Photo2, alt: 'Prime tappe del Cammino 2022' },
+      { src: cammino2022Photo3, alt: 'Tappa del Cammino 2022 tra sentieri e territorio' },
+      { src: cammino2022Photo4, alt: 'Momento di cammino collettivo nel Cammino 2022' },
+      { src: cammino2022Photo5, alt: 'Scorcio naturale dal Cammino 2022' },
+      { src: cammino2022Photo6, alt: 'Ricordo dal primo viaggio di VCI nel 2022' }
     ],
     content: [
       { type: 'text', value: 'Partiti con poco, tornati con tantissimo. Così è nato VCI, dalla voglia di riscoprire il Veneto a piedi.' }
