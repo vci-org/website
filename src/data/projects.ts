@@ -7,6 +7,16 @@ import ecocamp2025Photo4 from '../assets/photos/ecocamp2025/IMG_9046-rendered.jp
 import ecocamp2025Photo5 from '../assets/photos/ecocamp2025/IMG_3184-rendered.jpg';
 import ecocamp2025Photo6 from '../assets/photos/ecocamp2025/IMG_3086-rendered.jpg';
 import ecocamp2025Photo7 from '../assets/photos/ecocamp2025/IMG_20240829_152559-rendered.jpg';
+import cammino2024Cover from '../assets/photos/cammino2024/IMG_8245.jpg';
+import cammino2024Photo1 from '../assets/photos/cammino2024/IMG_8245.jpg';
+import cammino2024Photo2 from '../assets/photos/cammino2024/IMG_8140.jpg';
+import cammino2024Photo3 from '../assets/photos/cammino2024/IMG_8213.jpg';
+import cammino2024Photo4 from '../assets/photos/cammino2024/IMG_8223.jpg';
+import cammino2024Photo5 from '../assets/photos/cammino2024/IMG_8230.jpg';
+import cammino2024Photo6 from '../assets/photos/cammino2024/IMG_8241.jpg';
+import cammino2024Photo7 from '../assets/photos/cammino2024/IMG_8280.jpg';
+import cammino2024Photo8 from '../assets/photos/cammino2024/IMG_8496.jpg';
+import cammino2024Photo9 from '../assets/photos/cammino2024/IMG_8498.jpg';
 
 export const PROJECTS: Project[] = [
   {
@@ -86,12 +96,32 @@ export const PROJECTS: Project[] = [
   {
     id: 'ecocamp-2024',
     title: 'Ecocamp 2024',
-    description: 'Il nostro primo grande campo estivo itinerante.',
-    fullDescription: 'Nel 2024 abbiamo gettato le basi per quello che oggi è l\'Ecocamp. Un\'esperienza di comunità pura tra le montagne bellunesi.',
+    description: 'Dal 29 agosto al 1 settembre, un campo sull\'Altopiano di Asiago dedicato a rifiuti abbandonati, escursioni e ascolto del territorio.',
+    fullDescription: 'Ecocamp 2024 è nato in collaborazione con Associazione Occhi Aperti per approfondire un tema spesso invisibile: la presenza di discariche abusive e l\'abbandono di rifiuti sull\'Altopiano di Asiago. Dal 29 agosto al 1 settembre abbiamo vissuto giornate di campo tra attività pratiche, escursioni e visite guidate, lasciandoci accompagnare da chi quel territorio lo abita, lo conosce e lo protegge ogni giorno.',
     imageUrl: 'https://picsum.photos/1200/600?random=104',
     status: 'past',
+    partners: ['Associazione Occhi Aperti', 'Oltrevia'],
     content: [
-      { type: 'text', value: 'Ricordi di un\'estate indimenticabile tra le Dolomiti, dove abbiamo imparato il valore della condivisione e del rispetto per l\'ambiente.' }
+      {
+        type: 'text',
+        value: 'Da dove arrivavamo\nEcocamp 2024 si inserisce nel cammino di Veneto Comunità Itinerante, nato nel 2020 dalla Scuola di Politiche di Oltrevia per diffondere e amplificare l\'impegno per l\'ambiente e la giustizia sociale. Dopo aver attraversato il Veneto a piedi tra il 2022 e il 2023, sentivamo il bisogno di fermarci in un luogo e prendercene cura più da vicino.'
+      },
+      {
+        type: 'text',
+        value: 'Un itinerario diventato campo\nTra l\'estate 2022 e quella del 2023 abbiamo creato e percorso un itinerario ad anello di 7 settimane e 48 tappe, partendo da Bassano del Grappa e attraversando tutte le province venete. Quel viaggio ci ha insegnato a conoscere la regione a passo lento: pianure, vallate, laghi, montagne, città storiche e borghi, ma soprattutto persone e associazioni che ogni giorno custodiscono il territorio.'
+      },
+      {
+        type: 'text',
+        value: 'Il tema: rifiuti e discariche abusive\nSull\'Altopiano di Asiago abbiamo scelto di approfondire la presenza di rifiuti abbandonati e discariche abusive: un problema poco raccontato, ma capace di ferire luoghi di grande valore naturale e comunitario. Le attività pratiche ci hanno permesso di osservare il fenomeno da vicino e di trasformare la consapevolezza in azione.'
+      },
+      {
+        type: 'text',
+        value: 'Ascoltare chi vive l\'Altopiano\nGrazie alla collaborazione con Associazione Occhi Aperti, le giornate sono state anche un tempo di scoperta: escursioni, visite guidate e testimonianze ci hanno accompagnato dentro un territorio complesso e bellissimo. Abbiamo imparato che proteggere un luogo significa prima di tutto ascoltarlo, lasciandosi guidare da chi lo conosce davvero.'
+      },
+      {
+        type: 'text',
+        value: 'Una nuova forma di VCI\nEcocamp 2024 ha segnato un passaggio importante: dal cammino come attraversamento al campo come presenza. Restare, lavorare insieme, conoscere e fare comunità ci ha aiutato a immaginare un modo nuovo di continuare il progetto, con lo stesso passo lento e lo stesso desiderio di giustizia ambientale e sociale.'
+      }
     ]
   },
   {
@@ -99,8 +129,19 @@ export const PROJECTS: Project[] = [
     title: 'Cammino 2024',
     description: 'Attraverso le colline Trevigiane.',
     fullDescription: 'L\'edizione 2024 ci ha portati tra i vigneti e le colline di Treviso, incontrando cooperative sociali e agricoltori eroici.',
-    imageUrl: 'https://picsum.photos/1200/600?random=105',
+    imageUrl: cammino2024Cover,
     status: 'past',
+    gallery: [
+      { src: cammino2024Photo1, alt: 'Gruppo in cammino durante il Cammino 2024' },
+      { src: cammino2024Photo2, alt: 'Paesaggio attraversato dal Cammino 2024' },
+      { src: cammino2024Photo3, alt: 'Tappa del Cammino 2024 tra sentieri e territorio' },
+      { src: cammino2024Photo4, alt: 'Partecipanti del Cammino 2024 lungo il percorso' },
+      { src: cammino2024Photo5, alt: 'Momento di cammino collettivo nel Cammino 2024' },
+      { src: cammino2024Photo6, alt: 'Scorcio naturale dal Cammino 2024' },
+      { src: cammino2024Photo7, alt: 'Serata e vita condivisa durante il Cammino 2024' },
+      { src: cammino2024Photo8, alt: 'Incontro e tappa del Cammino 2024' },
+      { src: cammino2024Photo9, alt: 'Ultimi momenti del Cammino 2024' }
+    ],
     content: [
       { type: 'text', value: 'Camminare tra le colline del Prosecco ci ha permesso di scoprire il volto umano dietro la produzione industriale, parlando d\'agricoltura sociale.' }
     ]
