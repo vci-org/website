@@ -1,5 +1,6 @@
 import type { Project } from '../types';
 import ecocamp2026Cover from '../assets/photos/ecocamp2026/ciotole.jpg';
+import cammino2026Cover from '../assets/photos/cammino2026/IMG20250908091317.jpg';
 import ecocamp2025Cover from '../assets/photos/ecocamp2025/IMG_8994.jpg';
 import ecocamp2025Photo1 from '../assets/photos/ecocamp2025/IMG_8994.jpg';
 import ecocamp2025Photo2 from '../assets/photos/ecocamp2025/IMG_8982.jpg';
@@ -94,10 +95,46 @@ export const PROJECTS: Project[] = [
     title: 'Cammino Edizione 2026',
     description: 'A Settembre, in partenza da Bassano del Grappa per arrivare a Belluno.',
     fullDescription: 'La nostra edizione 2026 del cammino ci porterà da Bassano del Grappa fino a Belluno. Sarà un percorso di riflessione e scoperta del territorio, della sua natura e delle realtà associative che lo rendono vivo.',
-    imageUrl: 'https://picsum.photos/1200/600?random=102',
+    imageUrl: cammino2026Cover,
     status: 'future',
     content: [
       { type: 'text', value: 'Settembre è il mese del passo lento. Quest\'anno attraverseremo i paesaggi che collegano Bassano a Belluno, incontrando realtà che rigenerano il territorio.' }
+    ]
+  },
+  {
+    id: 'cammino-2025',
+    title: 'Cammino 2025',
+    description: 'Da Rovigo a Vicenza, una settimana tra Adige, Colli Euganei, Abbazia di Praglia e Alta Via dei Berici.',
+    fullDescription: 'Nel 2025 siamo ripartiti da Rovigo, da dove il cammino si era interrotto, per attraversare la pianura seguendo l\'Adige e poi entrare nel paesaggio dei Colli Euganei e dei Colli Berici. Una settimana di passi, salite, borghi e incontri fino alla meta finale: Vicenza.',
+    imageUrl: cammino2025Cover,
+    status: 'past',
+    gallery: [
+      { src: cammino2025Photo1, alt: 'Paesaggio attraversato durante il Cammino 2025' },
+      { src: cammino2025Photo2, alt: 'Tappa del Cammino 2025 tra sentieri e colline' },
+      { src: cammino2025Photo3, alt: 'Partecipanti lungo il percorso del Cammino 2025' },
+      { src: cammino2025Photo4, alt: 'Vista panoramica dal Cammino 2025' },
+      { src: cammino2025Photo5, alt: 'Momento di cammino collettivo nel Cammino 2025' },
+      { src: cammino2025Photo6, alt: 'Scorcio naturale attraversato nel Cammino 2025' },
+      { src: cammino2025Photo7, alt: 'Gruppo e territorio durante il Cammino 2025' },
+      { src: cammino2025Photo8, alt: 'Ricordo dal Cammino 2025 verso Vicenza' }
+    ],
+    content: [
+      {
+        type: 'text',
+        value: 'La rotta\nRipartendo da Rovigo, abbiamo seguito per un tratto il corso dell\'Adige, lasciandoci alle spalle la pianura per addentrarci tra le meraviglie dei Colli Euganei. Este è stata la porta d\'ingresso ai colli, poi il cammino è proseguito tra vigneti, sentieri e viste panoramiche fino ad Arquà Petrarca, uno dei borghi più belli d\'Italia.'
+      },
+      {
+        type: 'text',
+        value: 'Dagli Euganei ai Berici\nDopo Arquà Petrarca siamo passati per l\'Abbazia di Praglia e le zone di Teolo, prima di scendere verso valle e risalire negli altri colli della nostra regione: i Colli Berici. Da Noventa Vicentina abbiamo imboccato l\'Alta Via dei Berici fino a Pederiva, attraversando Castegnero e Brendola prima dell\'arrivo a Vicenza.'
+      },
+      {
+        type: 'text',
+        value: 'Le tappe\nSabato 06/09: Rovigo - Vighizzolo d\'Este, 25 km. Domenica 07/09: Vighizzolo d\'Este - Arquà Petrarca, 21 km. Lunedì 08/09: Arquà Petrarca - Abbazia di Praglia, 21 km. Martedì 09/09: Abbazia di Praglia - Teolo, 15 km. Mercoledì 10/09: Teolo - Saline, Noventa Vicentina, 25 km. Giovedì 11/09: Saline - Pederiva, Grancona, 24 km. Venerdì 12/09: Pederiva - Castegnero, 22 km. Sabato 13/09: Castegnero - Brendola, 19 km. Domenica 14/09: Brendola - Vicenza, 18 km.'
+      },
+      {
+        type: 'text',
+        value: 'Il passo del cammino\nQuesta settimana ha tenuto insieme fatica e bellezza: la pianura, i vigneti, i sentieri, le salite e le discese, i borghi e le abbazie. È stato un modo per continuare a conoscere il Veneto a passo lento, lasciando che il paesaggio cambiasse giorno dopo giorno e che il gruppo trovasse il proprio ritmo.'
+      }
     ]
   },
   {
@@ -177,42 +214,6 @@ export const PROJECTS: Project[] = [
       {
         type: 'text',
         value: 'Una nuova forma di VCI\nEcocamp 2024 ha segnato un passaggio importante: dal cammino come attraversamento al campo come presenza. Restare, lavorare insieme, conoscere e fare comunità ci ha aiutato a immaginare un modo nuovo di continuare il progetto, con lo stesso passo lento e lo stesso desiderio di giustizia ambientale e sociale.'
-      }
-    ]
-  },
-  {
-    id: 'cammino-2025',
-    title: 'Cammino 2025',
-    description: 'Da Rovigo a Vicenza, una settimana tra Adige, Colli Euganei, Abbazia di Praglia e Alta Via dei Berici.',
-    fullDescription: 'Nel 2025 siamo ripartiti da Rovigo, da dove il cammino si era interrotto, per attraversare la pianura seguendo l\'Adige e poi entrare nel paesaggio dei Colli Euganei e dei Colli Berici. Una settimana di passi, salite, borghi e incontri fino alla meta finale: Vicenza.',
-    imageUrl: cammino2025Cover,
-    status: 'past',
-    gallery: [
-      { src: cammino2025Photo1, alt: 'Paesaggio attraversato durante il Cammino 2025' },
-      { src: cammino2025Photo2, alt: 'Tappa del Cammino 2025 tra sentieri e colline' },
-      { src: cammino2025Photo3, alt: 'Partecipanti lungo il percorso del Cammino 2025' },
-      { src: cammino2025Photo4, alt: 'Vista panoramica dal Cammino 2025' },
-      { src: cammino2025Photo5, alt: 'Momento di cammino collettivo nel Cammino 2025' },
-      { src: cammino2025Photo6, alt: 'Scorcio naturale attraversato nel Cammino 2025' },
-      { src: cammino2025Photo7, alt: 'Gruppo e territorio durante il Cammino 2025' },
-      { src: cammino2025Photo8, alt: 'Ricordo dal Cammino 2025 verso Vicenza' }
-    ],
-    content: [
-      {
-        type: 'text',
-        value: 'La rotta\nRipartendo da Rovigo, abbiamo seguito per un tratto il corso dell\'Adige, lasciandoci alle spalle la pianura per addentrarci tra le meraviglie dei Colli Euganei. Este è stata la porta d\'ingresso ai colli, poi il cammino è proseguito tra vigneti, sentieri e viste panoramiche fino ad Arquà Petrarca, uno dei borghi più belli d\'Italia.'
-      },
-      {
-        type: 'text',
-        value: 'Dagli Euganei ai Berici\nDopo Arquà Petrarca siamo passati per l\'Abbazia di Praglia e le zone di Teolo, prima di scendere verso valle e risalire negli altri colli della nostra regione: i Colli Berici. Da Noventa Vicentina abbiamo imboccato l\'Alta Via dei Berici fino a Pederiva, attraversando Castegnero e Brendola prima dell\'arrivo a Vicenza.'
-      },
-      {
-        type: 'text',
-        value: 'Le tappe\nSabato 06/09: Rovigo - Vighizzolo d\'Este, 25 km. Domenica 07/09: Vighizzolo d\'Este - Arquà Petrarca, 21 km. Lunedì 08/09: Arquà Petrarca - Abbazia di Praglia, 21 km. Martedì 09/09: Abbazia di Praglia - Teolo, 15 km. Mercoledì 10/09: Teolo - Saline, Noventa Vicentina, 25 km. Giovedì 11/09: Saline - Pederiva, Grancona, 24 km. Venerdì 12/09: Pederiva - Castegnero, 22 km. Sabato 13/09: Castegnero - Brendola, 19 km. Domenica 14/09: Brendola - Vicenza, 18 km.'
-      },
-      {
-        type: 'text',
-        value: 'Il passo del cammino\nQuesta settimana ha tenuto insieme fatica e bellezza: la pianura, i vigneti, i sentieri, le salite e le discese, i borghi e le abbazie. È stato un modo per continuare a conoscere il Veneto a passo lento, lasciando che il paesaggio cambiasse giorno dopo giorno e che il gruppo trovasse il proprio ritmo.'
       }
     ]
   },

@@ -39,7 +39,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "ass-belluno-donna",
-    "name": "ass. Belluno Donna",
+    "name": "Associazione Belluno Donna",
     "category": "Sociale e Diritti",
     "locationLabel": "Belluno (BL)",
     "website": "http://bellunodonna.it/",
@@ -57,7 +57,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "coop-societ\u00e0-nuova",
-    "name": "coop. Societ\u00e0 Nuova",
+    "name": "Cooperativa Societ\u00e0 Nuova",
     "category": "Sociale e Diritti",
     "locationLabel": "Belluno (BL)",
     "website": "http://www.societanuova.eu/",
@@ -80,15 +80,6 @@ export const ASSOCIATIONS: Association[] = [
     "locationLabel": "Castelfranco Veneto (TV)",
     "website": "",
     "socials": "Instagram: https://www.instagram.com/plantenlightenment/ Facebook: https://www.facebook.com/Plantenlightenment/?locale=it_IT",
-    "edition": 1
-  },
-  {
-    "id": "nonno-andrea",
-    "name": "Nonno Andrea",
-    "category": "Agricoltura e Cibo",
-    "locationLabel": "Villorba (TV)",
-    "website": "https://www.nonnoandrea.it/",
-    "socials": "Instagram: https://www.instagram.com/nonnoandrea_/ Facebook: https://www.facebook.com/nonnoandrea/?locale=it_IT",
     "edition": 1
   },
   {
@@ -156,7 +147,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "cantina-agriturismo-tasinato",
-    "name": "cantina agriturismo Tasinato",
+    "name": "Cantina Agriturismo Tasinato",
     "category": "Agricoltura e Cibo",
     "locationLabel": "Due Carrare (PD)",
     "website": "http://www.cantinatasinato.it/",
@@ -174,7 +165,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "la-saggezza-della-terra",
-    "name": "La saggezza della terra",
+    "name": "La Saggezza della Terra",
     "category": "Agricoltura e Cibo",
     "locationLabel": "Monselice (PD)",
     "website": "https://www.lasaggezzadellaterra.com/",
@@ -192,7 +183,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "le-terre-del-fiume",
-    "name": "Le terre del fiume",
+    "name": "Le Terre del Fiume",
     "category": "Agricoltura e Cibo",
     "locationLabel": "Padova (PD)",
     "website": "",
@@ -237,7 +228,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "un-posto-in-cui-tornare",
-    "name": "Un Posto In Cui Tornare",
+    "name": "Un Posto in cui Tornare",
     "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Barbarano (VI)",
     "website": "https://www.unpostoincuitornare.it/",
@@ -255,7 +246,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "a-regola-dorto",
-    "name": "A regola d'orto",
+    "name": "A Regola d'Orto",
     "category": "Agricoltura e Cibo",
     "locationLabel": "Monteviale (VI)",
     "website": "http://www.aregoladorto.it/",
@@ -264,7 +255,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "cristina--guarda",
-    "name": "Cristina  Guarda",
+    "name": "Cristina Guarda",
     "category": "Economia e Politica",
     "locationLabel": "",
     "website": "",
@@ -273,7 +264,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "fornaci-rosse",
-    "name": "Fornaci rosse",
+    "name": "Fornaci Rosse",
     "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Vicenza (VI)",
     "website": "http://www.fornacirosse.it/",
@@ -291,7 +282,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "sulle-orme",
-    "name": "Sulle orme",
+    "name": "Sulle Orme",
     "category": "Sociale e Diritti",
     "locationLabel": "Fitt\u00e0 di Soave (VR)",
     "website": "http://www.sulleorme.com/",
@@ -318,7 +309,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "villa-buri-onlus",
-    "name": "Villa Buri onlus",
+    "name": "Villa Buri Onlus",
     "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Verona (VR)",
     "website": "http://www.villaburi.it/",
@@ -327,7 +318,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "one-bridge-to-idomeni",
-    "name": "One Bridge to idomeni",
+    "name": "One Bridge to Idomeni",
     "category": "Sociale e Diritti",
     "locationLabel": "Verona (VR)",
     "website": "https://www.onebridgeto.com",
@@ -336,7 +327,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "associaziona-nazionale-vittime-civili-di-guerra",
-    "name": "Associaziona Nazionale Vittime Civili di Guerra",
+    "name": "Associazione Nazionale Vittime Civili di Guerra",
     "category": "Sociale e Diritti",
     "locationLabel": "Verona (VR)",
     "website": "https://www.anvcg.it/sedi/",
@@ -345,7 +336,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "progetto-natura-verona-lago-odv",
-    "name": "Progetto Natura Verona Lago odv",
+    "name": "Progetto Natura Verona Lago ODV",
     "category": "Ambiente e Natura",
     "locationLabel": "Lazise (VR)",
     "website": "http://progettonaturaveronalago.it/",
@@ -354,7 +345,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "associazione-giovani-al-porto",
-    "name": "Associazione giovani al Porto",
+    "name": "Associazione Giovani al Porto",
     "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Lazise (VR)",
     "website": "https://bento.me/giovanialporto",
@@ -372,7 +363,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "la-cordata",
-    "name": "La cordata",
+    "name": "La Cordata",
     "category": "Sociale e Diritti",
     "locationLabel": "Bosco Chiesanuova (VR)",
     "website": "https://comunitalacordata.wordpress.com/informazioni/",
@@ -386,15 +377,6 @@ export const ASSOCIATIONS: Association[] = [
     "locationLabel": "Schio (VI)",
     "website": "https://www.venetolab.org/scuole/",
     "socials": "Instagram: https://www.instagram.com/off.sociopolitica_altovic/ Facebook: https://www.facebook.com/OfficinaSociopoliticaAltovicentino/?locale=it_IT",
-    "edition": 2
-  },
-  {
-    "id": "tizia-di-asiagio",
-    "name": "tizia di Asiagio?",
-    "category": "Sociale e Diritti",
-    "locationLabel": "Asiago (VI)",
-    "website": "",
-    "socials": "",
     "edition": 2
   },
   {
@@ -417,7 +399,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "il-vento-in-tasca",
-    "name": "Il Vento In Tasca",
+    "name": "Il Vento in Tasca",
     "category": "Sociale e Diritti",
     "locationLabel": "Punta Sabbioni (VE)",
     "website": "https://www.ilventointasca.it/#where",
@@ -435,7 +417,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "parrocchia-fornaci",
-    "name": "parrocchia Fornaci",
+    "name": "Parrocchia Fornaci",
     "category": "Sociale e Diritti",
     "locationLabel": "Porto Viro (RO)",
     "website": "",
@@ -471,7 +453,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "su-pa-i-monti",
-    "name": "Su pa i monti",
+    "name": "Su Pa i Monti",
     "category": "Cultura e Creativit\u00e0",
     "locationLabel": "(PD)",
     "website": "",
@@ -480,7 +462,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "comitato-lasciateci-respirare",
-    "name": "comitato lasciateci respirare",
+    "name": "Comitato Lasciateci Respirare",
     "category": "Ambiente e Natura",
     "locationLabel": "Monselice (PD)",
     "website": "",
@@ -489,7 +471,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "aps-la-vespa",
-    "name": "A.P.S. La Vespa",
+    "name": "APS La Vespa",
     "category": "Cultura e Creativit\u00e0",
     "locationLabel": "Battaglia Terme (PD)",
     "website": "https://www.lavespa.org/",
@@ -507,7 +489,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "sos-anfibi",
-    "name": "SOS anfibi",
+    "name": "SOS Anfibi",
     "category": "Ambiente e Natura",
     "locationLabel": "Castegnero (VI)",
     "website": "https://www.sosanfibi.it/",
@@ -516,7 +498,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "recupero-animali-selvatici-vi",
-    "name": "recupero animali selvatici VI",
+    "name": "Recupero Animali Selvatici VI",
     "category": "Ambiente e Natura",
     "locationLabel": "Vicenza (VI)",
     "website": "",
@@ -525,7 +507,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "az-agr-sermondi",
-    "name": "az. agr. Sermondi",
+    "name": "Azienda Agricola Sermondi",
     "category": "Agricoltura e Cibo",
     "locationLabel": "Castegnero (VI)",
     "website": "https://www.fattoriedeisaporiveneti.it/aziende/az-agr-sermondi-s-s/\nhttp://www.aziendaagricolasermondi.it/",
@@ -543,7 +525,7 @@ export const ASSOCIATIONS: Association[] = [
   },
   {
     "id": "i-boschi-che-resistono",
-    "name": "I boschi che resistono",
+    "name": "I Boschi che Resistono",
     "category": "Economia e Politica",
     "locationLabel": "Vicenza (VI)",
     "website": "https://iboschicheresistono.info/",
