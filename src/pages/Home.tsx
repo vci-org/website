@@ -3,6 +3,8 @@ import { ArrowRight, Map, Users, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Section, ProjectCard } from '../components/Shared';
 import { PROJECTS } from '../data/projects';
+import homeHeroImage from '../assets/photos/main/mura.jpg';
+import homeAboutImage from '../assets/photos/main/campi.jpg';
 
 export const Home: React.FC = () => {
   // Select the latest 1-2 projects that are planned (future)
@@ -15,7 +17,7 @@ export const Home: React.FC = () => {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://picsum.photos/1920/1080?grayscale&blur=2"
+            src={homeHeroImage}
             alt="Paesaggio Veneto"
             className="w-full h-full object-cover"
           />
@@ -99,7 +101,7 @@ export const Home: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <img
-              src="https://picsum.photos/800/800?random=20"
+              src={homeAboutImage}
               alt="Gruppo in cammino"
               className="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500"
             />

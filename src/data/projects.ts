@@ -7,6 +7,15 @@ import ecocamp2025Photo4 from '../assets/photos/ecocamp2025/IMG_9046-rendered.jp
 import ecocamp2025Photo5 from '../assets/photos/ecocamp2025/IMG_3184-rendered.jpg';
 import ecocamp2025Photo6 from '../assets/photos/ecocamp2025/IMG_3086-rendered.jpg';
 import ecocamp2025Photo7 from '../assets/photos/ecocamp2025/IMG_20240829_152559-rendered.jpg';
+import ecocamp2024Cover from '../assets/photos/ecocamp2024/IMG_2984.jpg';
+import ecocamp2024Photo1 from '../assets/photos/ecocamp2024/IMG_2984.jpg';
+import ecocamp2024Photo2 from '../assets/photos/ecocamp2024/IMG_2958.jpg';
+import ecocamp2024Photo3 from '../assets/photos/ecocamp2024/IMG_2971.jpg';
+import ecocamp2024Photo4 from '../assets/photos/ecocamp2024/IMG_3007.jpg';
+import ecocamp2024Photo5 from '../assets/photos/ecocamp2024/IMG_3024.jpg';
+import ecocamp2024Photo6 from '../assets/photos/ecocamp2024/IMG_3118.jpg';
+import ecocamp2024Photo7 from '../assets/photos/ecocamp2024/IMG_3151.jpg';
+import ecocamp2024Photo8 from '../assets/photos/ecocamp2024/IMG_3229.jpg';
 import cammino2024Cover from '../assets/photos/cammino2024/IMG_8245.jpg';
 import cammino2024Photo1 from '../assets/photos/cammino2024/IMG_8245.jpg';
 import cammino2024Photo2 from '../assets/photos/cammino2024/IMG_8140.jpg';
@@ -17,29 +26,49 @@ import cammino2024Photo6 from '../assets/photos/cammino2024/IMG_8241.jpg';
 import cammino2024Photo7 from '../assets/photos/cammino2024/IMG_8280.jpg';
 import cammino2024Photo8 from '../assets/photos/cammino2024/IMG_8496.jpg';
 import cammino2024Photo9 from '../assets/photos/cammino2024/IMG_8498.jpg';
+import cammino2022Cover from '../assets/photos/cammino2022/84aa9117-fb1a-45e1-9df4-c0d376b982f3.jpg';
+import cammino2022Photo1 from '../assets/photos/cammino2022/84aa9117-fb1a-45e1-9df4-c0d376b982f3.jpg';
+import cammino2022Photo2 from '../assets/photos/cammino2022/55f0d54a-4a52-4093-8b9d-03a7046e937c.jpg';
+import cammino2022Photo3 from '../assets/photos/cammino2022/IMG-20260508-WA0040.jpg';
+import cammino2022Photo4 from '../assets/photos/cammino2022/IMG-20260508-WA0041.jpg';
+import cammino2022Photo5 from '../assets/photos/cammino2022/IMG-20260508-WA0042.jpg';
+import cammino2022Photo6 from '../assets/photos/cammino2022/IMG_3645.jpg';
+import cammino2022Photo7 from '../assets/photos/cammino2022/WhatsApp Image 2026-04-23 at 21.32.02.jpeg';
 
 export const PROJECTS: Project[] = [
   {
     id: 'ecocamp-trieste-2026',
     title: 'Ecocamp Trieste 2026',
-    description: 'Un weekend a Trieste tra cammino, frontiera e servizio con Linea d\'Ombra.',
-    fullDescription: 'Ecocamp Trieste 2026 nasce in una città di confine, dove il cammino incontra le storie della Rotta Balcanica. Insieme ad ASCS e Linea d\'Ombra vivremo un weekend di ascolto, servizio e comunità.',
+    description: 'Weekend 19-21 giugno a Trieste, tra servizio, formazione e incontro con le realtà che vivono il confine.',
+    fullDescription: 'Ecocamp Trieste 2026 è un weekend immersivo per giovani tra i 18 e i 35 anni che vogliono mettersi in gioco, entrare in contatto con realtà complesse e vivere il confine da una prospettiva diversa. Dal 19 al 21 giugno saremo ospiti a Villa Ara, accompagnati da ASCS nell\'incontro con le realtà attive sul territorio di Trieste.',
     imageUrl: 'https://picsum.photos/1200/600?random=100',
     status: 'future',
-    googleFormUrl: 'https://forms.gle/example',
-    partners: ['ASCS', 'Linea d\'Ombra', 'ICS Trieste'],
+    googleFormUrl: 'https://docs.google.com/forms/d/11d8cz_1uoU1sJSJj_eLQMLEfKZumlVW8qI3ZEMk6akM/edit',
+    partners: ['ASCS', 'Linea d\'Ombra ODV', 'Diaconia Valdese', 'Caritas', 'Donk Associazione', 'Villa Ara'],
     content: [
       {
         type: 'text',
-        value: 'Il senso del progetto\nTrieste è un luogo in cui il confine non è solo una linea sulla mappa: è passaggio, incontro, attesa, arrivo. Per questo l\'Ecocamp sarà costruito attorno a tre parole: camminare, ascoltare, servire.'
+        value: 'Il senso del progetto\nTrieste è un luogo in cui il confine non è solo una linea sulla mappa: è passaggio, attesa, arrivo, vulnerabilità e relazione. L\'Ecocamp nasce per attraversare questo spazio con delicatezza, alternando servizio concreto, formazione e incontro con chi ogni giorno vive e accompagna le dinamiche migratorie sul territorio.'
       },
       {
         type: 'text',
-        value: 'Cosa vivremo\nCi saranno momenti di incontro con chi conosce da vicino il territorio, un servizio concreto accanto a Linea d\'Ombra e un cammino verso la frontiera slovena. Non sarà solo un weekend da raccontare: sarà un modo per mettersi in ascolto, con i piedi per terra e lo sguardo un po\' più largo.'
+        value: 'Servizio sul territorio\nCi metteremo a disposizione di diverse realtà locali, tra cui Linea d\'Ombra ODV, Diaconia Valdese, Caritas e Donk Associazione. Dalla raccolta e preparazione del cibo alle distribuzioni in città, fino al contatto con persone in transito e situazioni di vulnerabilità, proveremo a capire cosa significa esserci in modo concreto.'
       },
       {
         type: 'text',
-        value: 'Partecipazione\nI dettagli pratici su alloggio, trasporti e quota verranno condivisi appena definiti.'
+        value: 'Formazione e incontri\nASCS - Agenzia Scalabriniana per la Cooperazione allo Sviluppo ci accompagnerà nella lettura del contesto e sarà il nostro ponte con le realtà attive a Trieste. Attraverso testimonianze, momenti di confronto e la proiezione del docu-film Houmar, entreremo con più profondità nelle storie e nelle domande che attraversano il confine.'
+      },
+      {
+        type: 'text',
+        value: 'Il programma del weekend\nCi ritroveremo venerdì 19 giugno alle 20:00 a Villa Ara per una cena condivisa e un primo momento di conoscenza. Sabato sarà la giornata più intensa, tra attività di servizio, testimonianze e presenza nei luoghi di accoglienza e distribuzione. Domenica concluderemo con una camminata condivisa sul territorio, per dare senso all\'esperienza e lasciare sedimentare ciò che avremo incontrato.'
+      },
+      {
+        type: 'text',
+        value: 'Informazioni pratiche\nIl weekend si svolgerà dal 19 al 21 giugno a Trieste, con pernottamento presso Villa Ara, ospiti della comunità dei Gesuiti. Le attività termineranno domenica dopo pranzo, con rientro dalle 15:00. Gli spostamenti per raggiungere e lasciare Trieste saranno autonomi. Il contributo è di 30 euro e include alloggio, pasti, attività, escursione e assicurazione.'
+      },
+      {
+        type: 'text',
+        value: 'Cosa portare\nPer vivere bene l\'Ecocamp serviranno abiti comodi e pratici per le attività di servizio, scarpe adatte a muoversi in città, una felpa o giacca per la sera, sacco a pelo e materassino, zainetto per la giornata, borraccia riutilizzabile e necessario per l\'igiene personale.'
       }
     ]
   },
@@ -98,9 +127,19 @@ export const PROJECTS: Project[] = [
     title: 'Ecocamp 2024',
     description: 'Dal 29 agosto al 1 settembre, un campo sull\'Altopiano di Asiago dedicato a rifiuti abbandonati, escursioni e ascolto del territorio.',
     fullDescription: 'Ecocamp 2024 è nato in collaborazione con Associazione Occhi Aperti per approfondire un tema spesso invisibile: la presenza di discariche abusive e l\'abbandono di rifiuti sull\'Altopiano di Asiago. Dal 29 agosto al 1 settembre abbiamo vissuto giornate di campo tra attività pratiche, escursioni e visite guidate, lasciandoci accompagnare da chi quel territorio lo abita, lo conosce e lo protegge ogni giorno.',
-    imageUrl: 'https://picsum.photos/1200/600?random=104',
+    imageUrl: ecocamp2024Cover,
     status: 'past',
     partners: ['Associazione Occhi Aperti', 'Oltrevia'],
+    gallery: [
+      { src: ecocamp2024Photo1, alt: 'Momento all\'aperto durante Ecocamp 2024 sull\'Altopiano di Asiago' },
+      { src: ecocamp2024Photo2, alt: 'Partecipanti dell\'Ecocamp 2024 durante le attività di campo' },
+      { src: ecocamp2024Photo3, alt: 'Scorcio dall\'Ecocamp 2024 tra natura e territorio' },
+      { src: ecocamp2024Photo4, alt: 'Attività condivisa durante Ecocamp 2024' },
+      { src: ecocamp2024Photo5, alt: 'Partecipanti e paesaggio dell\'Altopiano durante Ecocamp 2024' },
+      { src: ecocamp2024Photo6, alt: 'Vita di gruppo durante Ecocamp 2024' },
+      { src: ecocamp2024Photo7, alt: 'Cammino e scoperta del territorio nell\'Ecocamp 2024' },
+      { src: ecocamp2024Photo8, alt: 'Momento conclusivo dell\'Ecocamp 2024' }
+    ],
     content: [
       {
         type: 'text',
@@ -162,8 +201,17 @@ export const PROJECTS: Project[] = [
     title: 'Cammino 2022',
     description: 'Le origini: il primo grande viaggio di VCI.',
     fullDescription: 'Il viaggio che ha dato inizio a tutto. Tre settimane di puro cammino attraverso tutto il Veneto.',
-    imageUrl: 'https://picsum.photos/1200/600?random=107',
+    imageUrl: cammino2022Cover,
     status: 'past',
+    gallery: [
+      { src: cammino2022Photo1, alt: 'Paesaggio e percorso del Cammino 2022' },
+      { src: cammino2022Photo2, alt: 'Gruppo del Cammino 2022 lungo una tappa' },
+      { src: cammino2022Photo3, alt: 'Scorcio attraversato durante il Cammino 2022' },
+      { src: cammino2022Photo4, alt: 'Momento condiviso durante il Cammino 2022' },
+      { src: cammino2022Photo5, alt: 'Partecipanti del Cammino 2022 in viaggio' },
+      { src: cammino2022Photo6, alt: 'Tappa e territorio del Cammino 2022' },
+      { src: cammino2022Photo7, alt: 'Ricordo dal Cammino 2022' }
+    ],
     content: [
       { type: 'text', value: 'Partiti con poco, tornati con tantissimo. Così è nato VCI, dalla voglia di riscoprire il Veneto a piedi.' }
     ]
