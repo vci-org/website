@@ -1,9 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { PageHeader, Section } from '../components/Shared';
-import { Footprints, Users2, Lightbulb, Mail } from 'lucide-react';
+import { CalendarDays, ExternalLink, Mail, MapPin } from 'lucide-react';
 import { SiInstagram } from '@icons-pack/react-simple-icons';
+import { PROJECTS } from '../data/projects';
 
 export const Participate: React.FC = () => {
+  const ecocamp2026 = PROJECTS.find(project => project.id === 'ecocamp-trieste-2026');
+
   return (
     <>
       <PageHeader
@@ -12,32 +16,62 @@ export const Participate: React.FC = () => {
       />
 
       <Section>
-        {/* --- THREE ACTIONS --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-          <div className="text-center p-8 border rounded-3xl hover:border-vci-yellow hover:bg-vci-lightYellow transition-colors">
-            <div className="w-20 h-20 bg-vci-yellow text-white rounded-full mx-auto flex items-center justify-center mb-6">
-              <Footprints size={40} />
-            </div>
-            <h3 className="text-xl font-bold mb-2">Cammina</h3>
-            <p className="text-gray-600 text-sm">Partecipa ai nostri eventi come camminatore. Semplice, diretto, essenziale.</p>
-          </div>
+        {ecocamp2026 && (
+          <article className="max-w-5xl mx-auto mb-12 overflow-hidden rounded-3xl bg-white shadow-xl border border-vci-yellow/20">
+            <div className="grid md:grid-cols-[0.95fr_1.05fr]">
+              <div className="relative min-h-[260px] md:min-h-full">
+                <img
+                  src={ecocamp2026.imageUrl}
+                  alt={ecocamp2026.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-vci-darkBlue/50 to-transparent md:bg-gradient-to-r" />
+              </div>
 
-          <div className="text-center p-8 border rounded-3xl hover:border-vci-blue hover:bg-blue-50 transition-colors">
-            <div className="w-20 h-20 bg-vci-blue text-white rounded-full mx-auto flex items-center justify-center mb-6">
-              <Users2 size={40} />
-            </div>
-            <h3 className="text-xl font-bold mb-2">Unisciti al Team</h3>
-            <p className="text-gray-600 text-sm">Entra nell'organizzazione. Metti a disposizione le tue competenze.</p>
-          </div>
+              <div className="p-8 md:p-10">
+                <p className="text-xs font-bold uppercase tracking-widest text-vci-yellow mb-3">
+                  Iscrizioni aperte
+                </p>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-vci-darkBlue mb-4">
+                  {ecocamp2026.title}
+                </h2>
+                <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                  {ecocamp2026.description}
+                </p>
 
-          <div className="text-center p-8 border rounded-3xl hover:border-amber-500 hover:bg-amber-50 transition-colors">
-            <div className="w-20 h-20 bg-amber-500 text-white rounded-full mx-auto flex items-center justify-center mb-6">
-              <Lightbulb size={40} />
+                <div className="grid sm:grid-cols-2 gap-3 mb-8">
+                  <div className="flex items-center gap-3 rounded-2xl bg-vci-lightYellow/60 px-4 py-3 text-sm font-semibold text-vci-darkBlue">
+                    <CalendarDays size={18} className="text-vci-yellow shrink-0" />
+                    19-21 giugno
+                  </div>
+                  <div className="flex items-center gap-3 rounded-2xl bg-vci-blue/10 px-4 py-3 text-sm font-semibold text-vci-darkBlue">
+                    <MapPin size={18} className="text-vci-blue shrink-0" />
+                    Trieste, Villa Ara
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-3">
+                  {ecocamp2026.googleFormUrl && (
+                    <a
+                      href={ecocamp2026.googleFormUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex justify-center items-center gap-2 bg-vci-yellow text-white font-bold py-4 px-6 rounded-xl hover:bg-vci-gold transition-colors shadow-md"
+                    >
+                      Iscriviti <ExternalLink size={18} />
+                    </a>
+                  )}
+                  <Link
+                    to={`/progetti/${ecocamp2026.id}`}
+                    className="inline-flex justify-center items-center gap-2 border-2 border-vci-darkBlue text-vci-darkBlue font-bold py-4 px-6 rounded-xl hover:bg-vci-darkBlue hover:text-white transition-colors"
+                  >
+                    Leggi il programma
+                  </Link>
+                </div>
+              </div>
             </div>
-            <h3 className="text-xl font-bold mb-2">Proponi</h3>
-            <p className="text-gray-600 text-sm">Hai un'idea per un progetto o un nuovo percorso? Parliamone.</p>
-          </div>
-        </div>
+          </article>
+        )}
 
         {/* --- CONTACT LINKS --- */}
         <div className="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-xl text-center">
