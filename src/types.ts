@@ -36,6 +36,10 @@ export interface Project {
   description: string;
   fullDescription?: string;
   imageUrl?: string;
+  gallery?: {
+    src: string;
+    alt: string;
+  }[];
   partners?: string[];
   status: 'past' | 'future';
   googleFormUrl?: string; // If provided, "Partecipa" button is active
