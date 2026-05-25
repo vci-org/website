@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, Mail, MapPin } from 'lucide-react';
-import { SiFacebook, SiInstagram } from '@icons-pack/react-simple-icons';
+import { SiInstagram } from '@icons-pack/react-simple-icons';
 import { NAV_ITEMS } from '../constants';
 import LogoMain from '../assets/VCI LOGO.png';
 import LogoBlu from '../assets/vci BLU.png';
@@ -143,10 +143,13 @@ const Footer: React.FC = () => {
             <p className="flex items-center gap-2"><MapPin size={16} /> Veneto, Italia</p>
             <p className="flex items-center gap-2"><Mail size={16} /> venetocomunitaitinerante@oltrevia.it</p>
             <div className="flex gap-4 mt-4">
-              <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
-                <SiFacebook size={20} />
-              </a>
-              <a href="#" className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors">
+              <a
+                href="https://www.instagram.com/venetocomunitaitinerante/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram Veneto Comunità Itinerante"
+                className="p-2 bg-white/10 rounded-full hover:bg-white/20 transition-colors"
+              >
                 <SiInstagram size={20} />
               </a>
             </div>
