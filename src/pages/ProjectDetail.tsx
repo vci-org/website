@@ -140,7 +140,7 @@ const PhotoCarousel: React.FC<{ title: string; photos: ProjectGallery }> = ({ ti
         ref={scrollRef}
         className="flex gap-5 overflow-x-auto overscroll-x-contain scroll-smooth snap-x snap-mandatory pb-6 vci-gallery-scrollbar"
       >
-        {photos.map((photo, index) => (
+        {photos.map((photo) => (
           <figure
             key={photo.src}
             className="snap-start shrink-0 w-[82vw] sm:w-[420px] md:w-[520px] overflow-hidden rounded-3xl bg-white shadow-lg border border-gray-100"
@@ -149,7 +149,8 @@ const PhotoCarousel: React.FC<{ title: string; photos: ProjectGallery }> = ({ ti
               src={photo.src}
               alt={photo.alt}
               className="h-[360px] md:h-[430px] w-full object-cover"
-              loading={index === 0 ? 'eager' : 'lazy'}
+              loading="lazy"
+              decoding="async"
             />
           </figure>
         ))}
@@ -234,6 +235,8 @@ export const ProjectDetail: React.FC = () => {
                       src={item.value} 
                       alt={`${project.title} gallery ${index}`} 
                       className="w-full h-auto object-cover max-h-[600px]"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 )}

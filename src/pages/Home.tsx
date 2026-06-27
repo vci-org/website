@@ -20,6 +20,9 @@ export const Home: React.FC = () => {
             src={homeHeroImage}
             alt="Paesaggio Veneto"
             className="w-full h-full object-cover"
+            loading="eager"
+            decoding="async"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-vci-yellow/60 to-vci-yellow/80 mix-blend-multiply" />
         </div>
@@ -104,6 +107,8 @@ export const Home: React.FC = () => {
               src={homeAboutImage}
               alt="Gruppo in cammino"
               className="rounded-3xl shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="md:w-1/2">

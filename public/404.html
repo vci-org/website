@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reindirizzamento | Veneto Comunità Itinerante</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      (function () {
+        var path = window.location.pathname || '/';
+        var search = window.location.search ? window.location.search.slice(1) : '';
+        var hash = window.location.hash ? window.location.hash.slice(1) : '';
+        var target = '/?p=' + encodeURIComponent(path);
+
+        if (search) target += '&q=' + encodeURIComponent(search);
+        if (hash) target += '&h=' + encodeURIComponent(hash);
+
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Reindirizzamento in corso...</p>
+  </body>
+</html>

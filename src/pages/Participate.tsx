@@ -26,6 +26,8 @@ export const Participate: React.FC = () => {
                   src={ecocamp2026.imageUrl}
                   alt={ecocamp2026.title}
                   className="absolute inset-0 h-full w-full object-cover"
+                  loading="eager"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-vci-darkBlue/50 to-transparent md:bg-gradient-to-r" />
               </div>

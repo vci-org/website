@@ -34,6 +34,22 @@
       content="Cammini, Ecocamp e collaborazione con le realtà locali per immaginare un Veneto più consapevole e connesso."
     />
     <meta name="twitter:image" content="https://venetocomunitaitinerante.it/og-image.svg" />
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var redirectPath = params.get('p');
+        if (!redirectPath) return;
+
+        var nextUrl = redirectPath;
+        var restoredSearch = params.get('q');
+        var restoredHash = params.get('h');
+
+        if (restoredSearch) nextUrl += '?' + restoredSearch;
+        if (restoredHash) nextUrl += '#' + restoredHash;
+
+        window.history.replaceState(null, '', nextUrl);
+      })();
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <script>
@@ -133,22 +149,22 @@
         <nav>
           <ul style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
             <li><a href="/" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Home Page</a></li>
-            <li><a href="/#/chi-siamo" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Chi Siamo</a></li>
-            <li><a href="/#/progetti" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Progetti e Cammini</a></li>
-            <li><a href="/#/associazioni" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Rete Associativa</a></li>
-            <li><a href="/#/diario" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Diario Itinerante</a></li>
-            <li><a href="/#/partecipa" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Partecipa</a></li>
-            <li><a href="/#/info" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Informazioni</a></li>
+            <li><a href="/chi-siamo" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Chi Siamo</a></li>
+            <li><a href="/progetti" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Progetti e Cammini</a></li>
+            <li><a href="/associazioni" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Rete Associativa</a></li>
+            <li><a href="/diario" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Diario Itinerante</a></li>
+            <li><a href="/partecipa" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Partecipa</a></li>
+            <li><a href="/info" style="color: #0369A1; font-weight: 600; text-decoration: none; border-bottom: 2px solid #FEF3C7;">Informazioni</a></li>
           </ul>
         </nav>
 
         <section style="margin-top: 3rem; border-top: 1px solid #e5e7eb; padding-top: 2rem;">
           <h2 style="font-size: 1.5rem; color: #D97706; margin-bottom: 1rem;">I Nostri Progetti:</h2>
           <ul style="list-style: disc; padding-left: 1.5rem;">
-            <li>Ecocamp Trieste 2026 - Focus su guerra e Rotta Balcanica</li>
+            <li>Ecocamp Trieste 2026 - Tre giorni per attraversare e osservare il confine</li>
             <li>Cammino Edizione 2026 - Da Bassano del Grappa a Belluno</li>
-            <li>Ecocamp 2025 - Sostenibilità urbana a Trieste</li>
-            <li>Cammino 2024 - Colline Trevigiane</li>
+            <li>Cammino 2025 - Da Rovigo a Vicenza tra Adige, Euganei e Berici</li>
+            <li>Ecocamp 2025 - Quattro giorni sull'Altopiano di Asiago tra cura e comunità</li>
           </ul>
         </section>
       </main>

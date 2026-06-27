@@ -36,6 +36,8 @@ export const ProjectCard: React.FC<{ project: Project, isCompact?: boolean }> = 
             src={project.imageUrl} 
             alt={project.title} 
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            loading="lazy"
+            decoding="async"
           />
         )}
         <div className="absolute top-4 right-4">
@@ -108,7 +110,14 @@ export const PageHeader: React.FC<{ title: string; subtitle?: string; bgImage?: 
   <div className="relative py-20 md:py-32 bg-vci-yellow flex items-center justify-center overflow-hidden">
     {bgImage && (
       <div className="absolute inset-0 z-0">
-        <img src={bgImage} alt="background" className="w-full h-full object-cover opacity-20" />
+        <img
+          src={bgImage}
+          alt="background"
+          className="w-full h-full object-cover opacity-20"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+        />
       </div>
     )}
     <div className="relative z-10 text-center px-4">
