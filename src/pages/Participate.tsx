@@ -6,7 +6,9 @@ import { SiInstagram } from '@icons-pack/react-simple-icons';
 import { PROJECTS } from '../data/projects';
 
 export const Participate: React.FC = () => {
-  const ecocamp2026 = PROJECTS.find(project => project.id === 'ecocamp-trieste-2026');
+  const ecocamp2026 = PROJECTS.find(
+    project => project.id === 'ecocamp-trieste-2026' && project.status === 'future'
+  );
 
   return (
     <>

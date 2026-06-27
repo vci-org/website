@@ -1,5 +1,11 @@
 import type { Project } from '../types';
-import ecocamp2026Cover from '../assets/photos/ecocamp2026/ciotole.jpg';
+import ecocamp2026Cover from '../assets/photos/ecocamp2026/cover.jpg';
+import ecocamp2026Photo1 from '../assets/photos/ecocamp2026/cover.jpg';
+import ecocamp2026Photo2 from '../assets/photos/ecocamp2026/WhatsApp Image 2026-06-22 at 14.26.00.jpeg';
+import ecocamp2026Photo3 from '../assets/photos/ecocamp2026/WhatsApp Image 2026-06-25 at 13.51.22.jpeg';
+import ecocamp2026Photo4 from '../assets/photos/ecocamp2026/WhatsApp Image 2026-06-25 at 13.51.24.jpeg';
+import ecocamp2026Photo5 from '../assets/photos/ecocamp2026/WhatsApp Image 2026-06-25 at 13.51.24-2.jpeg';
+import ecocamp2026Photo6 from '../assets/photos/ecocamp2026/WhatsApp Image 2026-06-25 at 13.51.24-3.jpeg';
 import cammino2026Cover from '../assets/photos/cammino2026/IMG20250908091317.jpg';
 import ecocamp2025Cover from '../assets/photos/ecocamp2025/IMG_8994.jpg';
 import ecocamp2025Photo1 from '../assets/photos/ecocamp2025/IMG_8994.jpg';
@@ -57,36 +63,35 @@ export const PROJECTS: Project[] = [
   {
     id: 'ecocamp-trieste-2026',
     title: 'Ecocamp Trieste 2026',
-    description: 'Weekend 19-21 giugno a Trieste, tra servizio, formazione e incontro con le realtà che vivono il confine.',
-    fullDescription: 'Ecocamp Trieste 2026 è un weekend immersivo per giovani tra i 18 e i 35 anni che vogliono mettersi in gioco, entrare in contatto con realtà complesse e vivere il confine da una prospettiva diversa. Dal 19 al 21 giugno saremo ospiti a Villa Ara, accompagnati da ASCS nell\'incontro con le realtà attive sul territorio di Trieste.',
+    description: '19-20-21 giugno, Trieste. Tre giorni per attraversare, osservare e ribaltare il confine insieme alle realtà che lo vivono ogni giorno.',
+    fullDescription: '19-20-21 giugno, Trieste\n\nMa quindi in che modo il confine si insinua nella vita quotidiana, espandendosi oltre la linea tracciata sulla mappa?\n\nAbbiamo scoperto, attraversato, osservato e infine ribaltato il confine di Trieste.\nQuesto confine si manifesta in modo apparentemente confusionario ma rimane un grande esempio di convivenze e incastri. E proprio tra questi interstizi si insinuano potenti forme di resistenza, che abbiamo ritrovato nello sguardo di cura ai piedi delle persone in movimento, nell’energia di chi si batte per difendere i loro diritti e nei gesti di chi si fa graffiare dalla densità delle storie che qui si intrecciano, ammirandone ogni tentativo di rimanere umani.\n\nCustodiremo tutti i momenti vissuti in questi giorni e proveremo a moltiplicarne l’impatto, perché in fin dei conti crediamo in un mondo di costruttori di ponti, saltatori di muri ed esploratori di frontiere (A. Langer).',
     imageUrl: ecocamp2026Cover,
-    status: 'future',
-    googleFormUrl: 'https://docs.google.com/forms/d/11d8cz_1uoU1sJSJj_eLQMLEfKZumlVW8qI3ZEMk6akM/edit',
+    status: 'past',
     partners: ['ASCS', 'Linea d\'Ombra ODV', 'Diaconia Valdese', 'Caritas', 'Donk Associazione', 'Villa Ara'],
+    gallery: [
+      { src: ecocamp2026Photo1, alt: 'Foto di copertina dell\'Ecocamp Trieste 2026' },
+      { src: ecocamp2026Photo2, alt: 'Momento condiviso durante l\'Ecocamp Trieste 2026' },
+      { src: ecocamp2026Photo3, alt: 'Partecipanti e territorio a Trieste durante l\'Ecocamp 2026' },
+      { src: ecocamp2026Photo4, alt: 'Scorcio dell\'Ecocamp Trieste 2026 tra persone e confine' },
+      { src: ecocamp2026Photo5, alt: 'Attivita e incontri dell\'Ecocamp Trieste 2026' },
+      { src: ecocamp2026Photo6, alt: 'Ricordo finale dell\'Ecocamp Trieste 2026' }
+    ],
     content: [
       {
         type: 'text',
-        value: 'Il senso del progetto\nTrieste è un luogo in cui il confine non è solo una linea sulla mappa: è passaggio, attesa, arrivo, vulnerabilità e relazione. L\'Ecocamp nasce per attraversare questo spazio con delicatezza, alternando servizio concreto, formazione e incontro con chi ogni giorno vive e accompagna le dinamiche migratorie sul territorio.'
+        value: '19-20-21 giugno, Trieste\nMa quindi in che modo il confine si insinua nella vita quotidiana, espandendosi oltre la linea tracciata sulla mappa?'
       },
       {
         type: 'text',
-        value: 'Servizio sul territorio\nCi metteremo a disposizione di diverse realtà locali, tra cui Linea d\'Ombra ODV, Diaconia Valdese, Caritas e Donk Associazione. Dalla raccolta e preparazione del cibo alle distribuzioni in città, fino al contatto con persone in transito e situazioni di vulnerabilità, proveremo a capire cosa significa esserci in modo concreto.'
+        value: 'Attraversare il confine\nAbbiamo scoperto, attraversato, osservato e infine ribaltato il confine di Trieste. Questo confine si manifesta in modo apparentemente confusionario ma rimane un grande esempio di convivenze e incastri.'
       },
       {
         type: 'text',
-        value: 'Formazione e incontri\nASCS - Agenzia Scalabriniana per la Cooperazione allo Sviluppo ci accompagnerà nella lettura del contesto e sarà il nostro ponte con le realtà attive a Trieste. Attraverso testimonianze, momenti di confronto e la proiezione del docu-film Houmar, entreremo con più profondità nelle storie e nelle domande che attraversano il confine.'
+        value: 'Gli interstizi della resistenza\nProprio tra questi interstizi si insinuano potenti forme di resistenza, che abbiamo ritrovato nello sguardo di cura ai piedi delle persone in movimento, nell\'energia di chi si batte per difendere i loro diritti e nei gesti di chi si fa graffiare dalla densita delle storie che qui si intrecciano, ammirandone ogni tentativo di rimanere umani.'
       },
       {
         type: 'text',
-        value: 'Il programma del weekend\nCi ritroveremo venerdì 19 giugno alle 20:00 a Villa Ara per una cena condivisa e un primo momento di conoscenza. Sabato sarà la giornata più intensa, tra attività di servizio, testimonianze e presenza nei luoghi di accoglienza e distribuzione. Domenica concluderemo con una camminata condivisa sul territorio, per dare senso all\'esperienza e lasciare sedimentare ciò che avremo incontrato.'
-      },
-      {
-        type: 'text',
-        value: 'Informazioni pratiche\nIl weekend si svolgerà dal 19 al 21 giugno a Trieste, con pernottamento presso Villa Ara, ospiti della comunità dei Gesuiti. Le attività termineranno domenica dopo pranzo, con rientro dalle 15:00. Gli spostamenti per raggiungere e lasciare Trieste saranno autonomi. Il contributo è di 30 euro e include alloggio, pasti, attività, escursione e assicurazione.'
-      },
-      {
-        type: 'text',
-        value: 'Cosa portare\nPer vivere bene l\'Ecocamp serviranno abiti comodi e pratici per le attività di servizio, scarpe adatte a muoversi in città, una felpa o giacca per la sera, sacco a pelo e materassino, zainetto per la giornata, borraccia riutilizzabile e necessario per l\'igiene personale.'
+        value: 'Quello che resta\nCustodiremo tutti i momenti vissuti in questi giorni e proveremo a moltiplicarne l\'impatto, perche in fin dei conti crediamo in un mondo di costruttori di ponti, saltatori di muri ed esploratori di frontiere (A. Langer).'
       }
     ]
   },
