@@ -98,12 +98,28 @@ export const PROJECTS: Project[] = [
   {
     id: 'cammino-2026',
     title: 'Cammino Edizione 2026',
-    description: 'A Settembre, in partenza da Bassano del Grappa per arrivare a Belluno.',
-    fullDescription: 'La nostra edizione 2026 del cammino ci porterà da Bassano del Grappa fino a Belluno. Sarà un percorso di riflessione e scoperta del territorio, della sua natura e delle realtà associative che lo rendono vivo.',
+    description: '5-13 settembre, da Bassano del Grappa a Belluno: nove tappe lungo la Valbrenta, il Feltrino e la Valbelluna.',
+    fullDescription: 'Dal 5 al 13 settembre 2026 il nostro cammino ci porterà da Bassano del Grappa fino a Belluno: nove tappe, poco meno di 140 chilometri, risalendo la Valbrenta per poi attraversare il Feltrino e scendere lungo la Valbelluna all\'ombra delle Dolomiti. Come sempre non è una traversata da percorrere di corsa: ogni tappa è pensata attorno agli incontri con le realtà che quei territori li abitano e li tengono vivi.',
     imageUrl: cammino2026Cover,
     status: 'future',
+    googleFormUrl: 'https://forms.gle/7DSTjBcc3hDCjZoj7',
     content: [
-      { type: 'text', value: 'Settembre è il mese del passo lento. Quest\'anno attraverseremo i paesaggi che collegano Bassano a Belluno, incontrando realtà che rigenerano il territorio.' }
+      {
+        type: 'text',
+        value: '5-13 settembre 2026\nDa Bassano del Grappa a Belluno, nove giorni di passo lento tra fondovalle, borghi e altopiani.'
+      },
+      {
+        type: 'text',
+        value: 'Il percorso\nSi parte risalendo la Valbrenta, si attraversa il confine tra Veneto e Trentino intorno al lago del Corlo, si arriva a Feltre e da lì si sale verso gli altopiani per poi scendere lungo la Valbelluna fino a Belluno. Tappe da 13 a 23 chilometri, che decideremo insieme se allungare o accorciare strada facendo.'
+      },
+      {
+        type: 'text',
+        value: 'Gli incontri\nOgni giorno ci fermeremo con associazioni, cooperative e progetti che si prendono cura di questi luoghi: chi recupera i terrazzamenti, chi lavora sull\'educazione ambientale, chi tiene aperti spazi di comunità in montagna. Il resto lo scopriremo cammino facendo.'
+      },
+      {
+        type: 'text',
+        value: 'Come partecipare\nSi cammina insieme, tutti sullo stesso percorso: il ritmo e le scelte di ogni giornata le prendiamo in gruppo. Dormiremo in strutture semplici messe a disposizione da parrocchie e realtà locali, cucinando insieme. Per unirti compila il form di iscrizione: ti ricontatteremo con tutti i dettagli su ritrovo, trasporti e cosa portare.'
+      }
     ]
   },
   {
