@@ -98,4 +98,20 @@ export const ARCHIVE_EDITIONS: ArchiveEdition[] = [
       { dayNumber: 10, date: '14/09/25', startPoint: 'Brendola', endPoint: 'Vicenza', associationsMet: [] },
     ],
   },
+  {
+    id: 'cammino-2026', year: 2026, duration: '9 giorni',
+    title: '5a Edizione - Dalla Valbrenta a Belluno',
+    description: 'Otto tappe a piedi da Bassano del Grappa a Belluno e una giornata conclusiva di incontri.',
+    days: [
+      { dayNumber: 1, date: '05/09/26', startPoint: 'Bassano del Grappa', endPoint: 'San Nazario', associationsMet: [] },
+      { dayNumber: 2, date: '06/09/26', startPoint: 'San Nazario', endPoint: 'Arsiè', associationsMet: ['Adotta un terrazzamento', 'Cooperativa 19'] },
+      { dayNumber: 3, date: '07/09/26', startPoint: 'Arsiè', endPoint: 'Feltre', associationsMet: ['Dolomiti Hub', 'Coltivare Condividendo'] },
+      { dayNumber: 4, date: '08/09/26', startPoint: 'Feltre', endPoint: 'Aune', associationsMet: [] },
+      { dayNumber: 5, date: '09/09/26', startPoint: 'Aune', endPoint: 'Cesiomaggiore', associationsMet: ['Museo Etnografico', 'Isoipse'] },
+      { dayNumber: 6, date: '10/09/26', startPoint: 'Cesiomaggiore', endPoint: 'Mas di Sedico', associationsMet: ['Centro Studi della Montagna Sospirolese'] },
+      { dayNumber: 7, date: '11/09/26', startPoint: 'Mas di Sedico', endPoint: 'Bolzano Bellunese', associationsMet: [] },
+      { dayNumber: 8, date: '12/09/26', startPoint: 'Bolzano Bellunese', endPoint: 'Belluno', associationsMet: ['Pomi d’Ottone', 'Belluno Donna'] },
+      { dayNumber: 9, date: '13/09/26', startPoint: 'Belluno', endPoint: 'Belluno (attività conclusive)', associationsMet: ['Biodistretto Terre Bellunesi'] },
+    ],
+  },
 ];

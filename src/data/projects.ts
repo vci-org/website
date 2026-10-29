@@ -6,7 +6,12 @@ import ecocamp2026Photo3 from '../assets/photos/ecocamp2026/WhatsApp Image 2026-
 import ecocamp2026Photo4 from '../assets/photos/ecocamp2026/WhatsApp Image 2026-06-25 at 13.51.24.jpeg';
 import ecocamp2026Photo5 from '../assets/photos/ecocamp2026/WhatsApp Image 2026-06-25 at 13.51.24-2.jpeg';
 import ecocamp2026Photo6 from '../assets/photos/ecocamp2026/WhatsApp Image 2026-06-25 at 13.51.24-3.jpeg';
-import cammino2026Cover from '../assets/photos/cammino2026/IMG20250908091317.jpg';
+import camminoWinterCover from '../assets/photos/cammino2026/IMG20250908091317.jpg';
+import cammino2026Photo1 from '../assets/photos/cammino2026/settembre-1.jpg';
+import cammino2026Photo2 from '../assets/photos/cammino2026/settembre-2.jpg';
+import cammino2026Photo3 from '../assets/photos/cammino2026/settembre-3.jpg';
+import cammino2026Photo4 from '../assets/photos/cammino2026/settembre-4.jpg';
+import cammino2026Photo5 from '../assets/photos/cammino2026/settembre-5.jpg';
 import ecocamp2025Cover from '../assets/photos/ecocamp2025/IMG_8994.jpg';
 import ecocamp2025Photo1 from '../assets/photos/ecocamp2025/IMG_8994.jpg';
 import ecocamp2025Photo2 from '../assets/photos/ecocamp2025/IMG_8982.jpg';
@@ -96,35 +101,42 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
+    id: 'cammino-invernale-2027',
+    title: 'Cammino invernale 2027',
+    description: 'Un nuovo cammino di 3-4 giorni, probabilmente nella prima settimana di gennaio 2027.',
+    fullDescription: 'Stiamo preparando un cammino invernale di 3-4 giorni, probabilmente nella prima settimana di gennaio 2027. Date, percorso e modalità di partecipazione sono ancora da definire: condivideremo i dettagli appena disponibili.',
+    imageUrl: camminoWinterCover,
+    status: 'future'
+  },
+  {
     id: 'cammino-2026',
     title: 'Cammino Edizione 2026',
-    description: '5-13 settembre, da Bassano del Grappa a Belluno: nove tappe lungo la Valbrenta, il Feltrino e la Valbelluna.',
-    fullDescription: 'Dal 5 al 13 settembre 2026 il nostro cammino ci porterà da Bassano del Grappa fino a Belluno: nove tappe, poco meno di 140 chilometri, risalendo la Valbrenta per poi attraversare il Feltrino e scendere lungo la Valbelluna all\'ombra delle Dolomiti. Come sempre non è una traversata da percorrere di corsa: ogni tappa è pensata attorno agli incontri con le realtà che quei territori li abitano e li tengono vivi.',
-    imageUrl: cammino2026Cover,
-    status: 'future',
-    googleFormUrl: 'https://forms.gle/7DSTjBcc3hDCjZoj7',
+    description: 'Dal 5 al 13 settembre, da Bassano del Grappa a Belluno: otto tappe a piedi e una giornata conclusiva.',
+    fullDescription: 'Dal 5 al 13 settembre 2026 abbiamo camminato da Bassano del Grappa a Belluno, attraversando la Valbrenta, il Feltrino e la Valbelluna. Tra sentieri, incontri e momenti di vita condivisa, ogni giornata ci ha fatto conoscere persone e realtà che si prendono cura del territorio.',
+    imageUrl: cammino2026Photo1,
+    status: 'past',
+    gallery: [
+      { src: cammino2026Photo1, alt: 'Cammino di settembre 2026: un momento della prima giornata' },
+      { src: cammino2026Photo2, alt: 'Cammino di settembre 2026: un momento lungo il percorso' },
+      { src: cammino2026Photo3, alt: 'Cammino di settembre 2026: giornata conclusiva' },
+      { src: cammino2026Photo4, alt: 'Cammino di settembre 2026: penultima giornata' },
+      { src: cammino2026Photo5, alt: 'Cammino di settembre 2026: serata a Belluno' }
+    ],
     content: [
-      {
-        type: 'text',
-        value: '5-13 settembre 2026\nDa Bassano del Grappa a Belluno, nove giorni di passo lento tra fondovalle, borghi e altopiani.'
-      },
-      {
-        type: 'text',
-        value: 'Il percorso\nSi parte risalendo la Valbrenta, si attraversa il confine tra Veneto e Trentino intorno al lago del Corlo, si arriva a Feltre e da lì si sale verso gli altopiani per poi scendere lungo la Valbelluna fino a Belluno. Tappe da 13 a 23 chilometri, che decideremo insieme se allungare o accorciare strada facendo.'
-      },
-      {
-        type: 'text',
-        value: 'Gli incontri\nOgni giorno ci fermeremo con associazioni, cooperative e progetti che si prendono cura di questi luoghi: chi recupera i terrazzamenti, chi lavora sull\'educazione ambientale, chi tiene aperti spazi di comunità in montagna. Il resto lo scopriremo cammino facendo.'
-      },
-      {
-        type: 'text',
-        value: 'Come partecipare\nSi cammina insieme, tutti sullo stesso percorso: il ritmo e le scelte di ogni giornata le prendiamo in gruppo. Dormiremo in strutture semplici messe a disposizione da parrocchie e realtà locali, cucinando insieme. Per unirti compila il form di iscrizione: ti ricontatteremo con tutti i dettagli su ritrovo, trasporti e cosa portare.'
-      }
+      { type: 'text', value: '5 settembre · Bassano – San Nazario · 11,2 km\nSiamo partiti da Villa Angaran, dove è nato il progetto, e abbiamo seguito il Brenta. Dopo una pausa sul fiume abbiamo visitato le Grotte di Oliero, prima della serata insieme nella parrocchia di San Nazario.' },
+      { type: 'text', value: '6 settembre · San Nazario – Arsiè · 22,8 km\nLungo il Brenta abbiamo incontrato Adotta un terrazzamento e scoperto il valore dei muri a secco. Al Lago del Corlo, Mirko della Cooperativa 19 ci ha raccontato la storia della diga; dopo percorsi diversi il gruppo si è ritrovato sulle rive del lago.' },
+      { type: 'text', value: '7 settembre · Arsiè – Feltre · 17,2 km\nTra boschi e borghi abbiamo visitato il Dolomiti Hub a Fonzaso. A Feltre abbiamo incontrato Coltivare Condividendo, che ci ha raccontato il suo lavoro per la biodiversità agricola e la tutela dei semi locali.' },
+      { type: 'text', value: '8 settembre · Feltre – Aune · 13,6 km\nAbbiamo affrontato la salita lungo l’Alta Via n. 2, tra sentieri e boschi, fino ad Aune. Qui l’accoglienza di Oriella e del Cammino Retico ci ha regalato una serata di riposo e convivialità.' },
+      { type: 'text', value: '9 settembre · Aune – Cesiomaggiore · 26,1 km\nSotto la pioggia abbiamo percorso sentieri della Via Claudia Augusta e visitato il Castello di Lusa. A Cesiomaggiore, il Museo Etnografico e Isoipse ci hanno accolti attorno al larìn per parlare di memoria e territorio.' },
+      { type: 'text', value: '10 settembre · Cesiomaggiore – Mas di Sedico · 19,5 km\nPer evitare il maltempo abbiamo scelto un percorso nella vallata. A Mas di Sedico abbiamo incontrato il Centro Studi della Montagna Sospirolese e parlato di sentieri, comunità e futuro delle aree montane.' },
+      { type: 'text', value: '11 settembre · Mas di Sedico – Bolzano Bellunese · 20,8 km (variante corta 11,2 km)\nDopo i ghiaioni di San Salvador il gruppo ha scelto due percorsi: uno a fondovalle e uno in salita verso la Talvena. Ci siamo ritrovati a Bolzano Bellunese, accolti in parrocchia per una serata insieme.' },
+      { type: 'text', value: '12 settembre · Bolzano Bellunese – Belluno · 15,4 km\nAbbiamo attraversato il canyon del Bus del Buson prima di raggiungere Belluno. Nel pomeriggio abbiamo incontrato Pomi d’Ottone e Belluno Donna, ascoltando i loro progetti e il loro impegno sul territorio.' },
+      { type: 'text', value: '13 settembre · Belluno · giornata conclusiva\nL’ultimo giorno abbiamo incontrato il Biodistretto Terre Bellunesi per parlare di biologico e sostenibilità. Poi ci siamo ritrovati al Lago di Santa Croce per un ultimo pranzo e i saluti.' }
     ]
   },
   {
     id: 'cammino-2025',
-    title: 'Cammino 2025',
+    title: 'Cammino Edizione 2025',
     description: 'Da Rovigo a Vicenza, una settimana tra Adige, Colli Euganei, Abbazia di Praglia e Alta Via dei Berici.',
     fullDescription: 'Nel 2025 siamo ripartiti da Rovigo, da dove il cammino si era interrotto, per attraversare la pianura seguendo l\'Adige e poi entrare nel paesaggio dei Colli Euganei e dei Colli Berici. Una settimana di passi, salite, borghi e incontri fino alla meta finale: Vicenza.',
     imageUrl: cammino2025Cover,
@@ -240,7 +252,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'cammino-2024',
-    title: 'Cammino 2024',
+    title: 'Cammino Edizione 2024',
     description: 'Da Treviso a Rovigo, seguendo il Sile, la laguna veneziana e il delta del Po.',
     fullDescription: 'Nel 2024 abbiamo ripreso il cammino del Veneto attraversando nuovi tratti e raggiungendo la provincia di Rovigo. Da Treviso siamo scesi lungo la ciclabile del Sile fino alla laguna veneziana, per poi proseguire attraverso Lido, Pellestrina, Chioggia e il delta del Po fino a Rovigo.',
     imageUrl: cammino2024Cover,
@@ -277,7 +289,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'cammino-2023',
-    title: 'Cammino 2023',
+    title: 'Cammino Edizione 2023',
     description: 'Esplorando la costa Veneziana.',
     fullDescription: 'Da Chioggia a Caorle, un viaggio lungo l\'acqua per capire l\'impatto del cambiamento climatico sulle nostre coste.',
     imageUrl: cammino2023Cover,
@@ -297,7 +309,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'cammino-2022',
-    title: 'Cammino 2022',
+    title: 'Cammino Edizione 2022',
     description: 'Le origini: il primo grande viaggio di VCI.',
     fullDescription: 'Il viaggio che ha dato inizio a tutto. Tre settimane di puro cammino attraverso tutto il Veneto.',
     imageUrl: cammino2022Cover,

@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { PageHeader, Section } from '../components/Shared';
 import { ARCHIVE_EDITIONS } from '../data/archive';
 import { ASSOCIATIONS } from '../data/associations';
@@ -218,11 +219,14 @@ export const Diario: React.FC = () => {
                           {edition.year}
                         </span>
                         <span className="text-gray-400 text-sm font-medium">
-                          {edition.duration} • {edition.days.length} tappe
+                          {edition.duration} • {edition.id === 'cammino-2026' ? '8 tappe e una giornata conclusiva' : `${edition.days.length} tappe`}
                         </span>
                       </div>
                       <h2 className="text-3xl md:text-5xl font-bold font-serif text-vci-darkBlue mb-4 leading-tight">{edition.title}</h2>
                       <p className="text-gray-600 text-lg italic max-w-3xl leading-relaxed">"{edition.description}"</p>
+                      {edition.id === 'cammino-2026' && (
+                        <Link to="/progetti/cammino-2026" className="inline-block mt-4 text-vci-blue font-bold hover:underline">Leggi i racconti delle giornate</Link>
+                      )}
                     </div>
 
                     <div className="bg-vci-beige/50 rounded-2xl p-6 border border-vci-lightYellow min-w-[280px]">
